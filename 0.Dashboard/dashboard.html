@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/all.min.js"></script>
+</head>
+
+<body class="add-child-template">
+    <header>
+        <div class="headerContent">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12 col-12 logo">
+                    <a href="#"><img src="images/logo2.jpg" alt="" class="logoimg"></a>
+                </div>
+                <div class="col-lg-7 col-10 page-title justify-item-center">
+                    <div class="navbars-wrapper">
+                        <a href="#navbars" class="navbars" data-bs-toggle="offcanvas" role="button" aria-controls="navbars">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h1>Hoạt động của con</h1>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-2 accountInfo dropdown">
+                    <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                    <h4 class="accountName">LiemNguyen <i class="fas fa-chevron-down bt-arrow" style="color: #2aabcb; font-size: 14px;"></i></h4>
+                    <!-- <button class="rightClick btn dropdown-toggle" id="accountDroppdown"> -->
+                    <!-- </button> -->
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="accountDroppdown" aria-labelledby="accountDroppdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/help.png" alt="Trung tâm hỗ trợ">Trung tâm hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/logOut.png" alt="Đăng xuất">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="left-sidebar" tabindex="-1" id="navbars" aria-labelledby="navbarsLable">
+                <div class="navigation-menu">
+                    <div class="scrollable-content">
+                        <ul class="menu-list">
+                            <li title="My family" class="menu-item" role="navigation">
+                                <a class="menu-anchor menu-anchor-active" href="#/">
+                                    <img src="images/my-family.png" alt="" class="show" />
+                                    <img src="images/MyFamily2.png" alt="" class="hide" />
+                                    <span>Hoạt động<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Danh sách thiết bị" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/devices.png" alt="" class="show" />
+                                    <img src="images/Devices2.png" alt="" class="hide" />
+                                    <span>Thiết bị<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Vị trí của con" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/my-location.png" alt="" class="show" />
+                                    <img src="images/MyLocation2.png" alt="" class="hide" />
+                                    <span>Vị trí <br>của con</span>
+                                </a>
+                            </li>
+                            <li title="Tài khoản" class="menu-item" role="navigation" class>
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/account.png" alt="" class="show" />
+                                    <img src="images/Account2.png" alt="" class="hide" />
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="license-info-container">
+                    <ul class="license-info-optionals">
+                        <li class="license-infoTitle"><span>Bản dùng thử đặc biệt</span></li>
+                        <li class="license-info-subTitle">
+                            <span>Hết hạn sau 3 ngày</span>
+                            <a class="upgrade" href="#">Nâng cấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="dashboard-wrapper">
+                    <div class="columnMain-container">
+                        <div class="dashboard-content">
+                            <div class="content-left">
+                                <div class="acc-info">
+                                    <img src="images/icon3.png" alt="">
+                                    <span class="acc-devices">DucMinhWindows</span>
+                                    <span class="acc-status">Offline</span>
+                                </div>
+                                <ul class="acc-activities">
+                                    <li>
+                                        <img src="images/dashboard.png" alt=""> Bảng tóm tắt
+                                    </li>
+                                    <li>
+                                        <img src="images/Timeline.png" alt=""> Dòng thời gian hoạt động
+                                    </li>
+                                    <li class="dropdown">
+                                        <div class="title">
+                                            <img src="images/config.png" alt=""> Thiết lập quy tắc
+                                            <button class="btn dropdown-toggle" data-toggle="collapse" type="button" data-target="#activesDropdown" aria-expanded="false" aria-controls="activesDropdown"><i class="fas fa-chevron-down"></i></button>
+                                        </div>
+                                        <div id="activesDropdown" class="collapse">
+                                            <ul>
+                                                <li>
+                                                    <img src="images/clock.png" alt=""> Giới hạn thời gian hàng ngày
+                                                </li>
+                                                <li>
+                                                    <img src="images/restrictTime.png" alt=""> Hạn chế thời gian
+                                                </li>
+                                                <li>
+                                                    <img src="images/language.png" alt=""> Lọc Web
+                                                </li>
+                                                <li>
+                                                    <img src="images/youtube.png" alt=""> Giám sát Youtube
+                                                </li>
+                                                <li>
+                                                    <img src="images/Games.png" alt=""> Trò chơi & ứng dụng
+                                                </li>
+                                                <li>
+                                                    <img src="images/callSMS.png" alt=""> Cuộc gọi & Tin nhắn
+                                                </li>
+                                                <li>
+                                                    <img src="images/location.png" alt=""> Giám sát vị trí
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-right">
+                                <div class="board-list">
+                                    <div class="date-navigation">
+                                        <ul>
+                                            <li class="active">
+                                                <a href="#">Hôm nay</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">7 ngày</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">15 ngày</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">30 ngày</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="far fa-calendar-alt"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="row items">
+                                        <div class="col-md-6 item item-time">
+                                            <div class="item-wrapper">
+                                                <div class="item-title">
+                                                    <h3>
+                                                        <span class="title-left">
+                                                            <img src="images/clock.png" alt="">
+                                                            Thời gian sử dụng trong ngày
+                                                        </span>
+                                                        <span class="title-right">
+                                                            <img src="images/Infor.png" alt="">
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="item-content">
+                                                    <div class="time-use">
+                                                        <span>1h 36 phút</span>
+                                                        <span>Giới hạn: 24h</span>
+                                                    </div>
+                                                    <div class="progress">
+                                                        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                    <button class="more-time-action">Thêm thời gian</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 item item-apps">
+                                            <div class="item-wrapper">
+                                                <div class="item-title">
+                                                    <h3>
+                                                        <span class="title-left">
+                                                            <img src="images/Analytics.png" alt="">
+                                                            Ứng dụng và hoạt động web
+                                                        </span>
+                                                        <span class="title-right">
+                                                            <img src="images/Infor.png" alt="">
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="item-content">
+                                                    <ul class="app-lists">
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span class="app-logo">
+                                                                    <img src="images/logo-spotify.png" alt="">
+                                                                </span>
+                                                                <span>
+                                                                    <span>Spotify</span>
+                                                                    <span>Ứng dụng Android</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">31m</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span class="app-logo">
+                                                                    <img src="images/logo-youtube.png" alt="">
+                                                                </span>
+                                                                <span>
+                                                                    <span>Youtube</span>
+                                                                    <span>Ứng dụng Android</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">25m</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span class="app-logo">
+                                                                    <img src="images/logo-instagram.png" alt="">
+                                                                </span>
+                                                                <span>
+                                                                    <span>Instagram</span>
+                                                                    <span>Ứng dụng Android</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">14m</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span class="app-logo">
+                                                                    <img src="images/logo-whatsapp.png" alt="">
+                                                                </span>
+                                                                <span>
+                                                                    <span>WhatsApp</span>
+                                                                    <span>Ứng dụng Android</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">8m</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span class="app-logo">
+                                                                    <img src="images/logo-whatsapp.png" alt="">
+                                                                </span>
+                                                                <span>
+                                                                    <span>marvalheroes.com</span>
+                                                                    <span class="warning">Danh mục được cảnh báo</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">7m</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="underline">Xem thêm</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 item item-apps-limited">
+                                            <div class="item-wrapper">
+                                                <div class="item-title">
+                                                    <h3>
+                                                        <span class="title-left">
+                                                            <img src="images/Global.png" alt="">
+                                                            Hoạt động web bị chặn
+                                                        </span>
+                                                        <span class="title-right">
+                                                            <img src="images/Infor.png" alt="">
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="item-content">
+                                                    <ul class="app-lists">
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span>
+                                                                    <span>twitter.com</span>
+                                                                    <span>Mạng xã hội</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">5 lần</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span>
+                                                                    <span>google.com</span>
+                                                                    <span>Cổng tìm kiếm</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">4 lần</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span>
+                                                                    <span>marvelheroes.com</span>
+                                                                    <span>Trò chơi, Trò chuyện, Bạo lực</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">2 lần</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span>
+                                                                    <span>nba.com</span>
+                                                                    <span>Tin tức, Thể thao, Diễn đàn</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">2 lần</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span>
+                                                                    <span>amazon.com</span>
+                                                                    <span>Mua sắm</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">1 lần</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="underline">Xem thêm</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 item item-youtube">
+                                            <div class="item-wrapper">
+                                                <div class="item-title">
+                                                    <h3>
+                                                        <span class="title-left">
+                                                            <img src="images/youtube.png" alt="">
+                                                            Tóm tắt Youtube
+                                                        </span>
+                                                        <span class="title-right">
+                                                            <img src="images/Infor.png" alt="">
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="item-content">
+                                                    <div class="video-number">
+                                                        <ul>
+                                                            <li>
+                                                                <span class="title">Video</span>
+                                                                <span class="number">số 8</span>
+                                                            </li>
+                                                            <li>
+                                                                <span class="title">Tìm kiếm</span>
+                                                                <span class="number">1</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="newest-search">
+                                                        <span class="title">Tìm kiếm mới nhất</span>
+                                                        <ul class="search-list">
+                                                            <li>"trường đan"</li>
+                                                        </ul>
+                                                    </div>
+                                                    <a href="#" class="underline">Xem video</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 item item-search-web">
+                                            <div class="item-wrapper">
+                                                <div class="item-title">
+                                                    <h3>
+                                                        <span class="title-left">
+                                                            <img src="images/icon-search.png" alt="">
+                                                            Hoạt động tìm kiếm web
+                                                        </span>
+                                                        <span class="title-right">
+                                                            <img src="images/Infor.png" alt="">
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="item-content">
+                                                    <ul class="app-lists">
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span>
+                                                                    <span>Air</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">5 lần</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span>
+                                                                    <span>Macbook</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">4 lần</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span>
+                                                                    <span>Visual</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">2 lần</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span>
+                                                                    <span>Studio</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">2 lần</span>
+                                                        </li>
+                                                        <li>
+                                                            <div class="app-name">
+                                                                <span>
+                                                                    <span>Project</span>
+                                                                </span>
+                                                            </div>
+                                                            <span class="timeUsingApp">1 lần</span>
+                                                        </li>
+                                                    </ul>
+                                                    <a href="#" class="underline">Xem thêm</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 item item-callAndMessage">
+                                            <div class="item-wrapper">
+                                                <div class="item-title">
+                                                    <h3>
+                                                        <span class="title-left">
+                                                            <img src="images/callSMS.png" alt="">
+                                                            Cuộc gọi và Tin nhắn
+                                                        </span>
+                                                        <span class="title-right">
+                                                            <img src="images/Infor.png" alt="">
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="item-content content-null">
+                                                    <i>Không có cuộc gọi và tin nhắn của DucMinhWindows trong khoảng thời gian này</i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="more-time">
+                                    <div class="more-time-content">
+                                        <div class="item-title">
+                                            <h3>Thêm thời gian</h3>
+                                            <p>Bạn muốn thêm bao nhiêu thời gian vào giới hạn ngày hôm nay?</p>
+                                        </div>
+                                        <div class="close-button">
+                                            <img src="images/icon-close.png" alt="">
+                                        </div>
+                                        <div class="more-time-list">
+                                            <ul>
+                                                <li class="active"><img src="images/icon-accept.png" /> Không có thêm thời gian</li>
+                                                <li><img src="images/icon-accept.png" /> 15m</li>
+                                                <li><img src="images/icon-accept.png" /> 30m</li>
+                                                <li><img src="images/icon-accept.png" /> 45m</li>
+                                                <li><img src="images/icon-accept.png" /> 1h</li>
+                                                <li><img src="images/icon-accept.png" /> 1h 15phút</li>
+                                                <li><img src="images/icon-accept.png" /> 1h 30phút</li>
+                                                <li><img src="images/icon-accept.png" /> 1h 45phút</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="more-time-button">
+                                        <button class="btn-primary">Xác nhận</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/effect.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+</body>
+
+</html>

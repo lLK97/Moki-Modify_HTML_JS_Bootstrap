@@ -1,0 +1,690 @@
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 15px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #9b9c9d;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: -10px;
+    bottom: -3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    box-shadow: 0 0 0.5px 0.5px #ccc;
+}
+
+input:checked+.slider {
+    background-color: #94cbd9;
+}
+
+input:focus+.slider {}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    background: #2aabcb;
+    box-shadow: 0 0 1px 1px transparent;
+}
+
+.full-container .columnMain-container {
+    max-width: 96%;
+}
+
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bold.big {
+    font-size: 18px;
+}
+
+.bold.small {
+    font-size: 14px;
+}
+
+.bold.red {
+    color: #dc003e;
+    font-size: 16px;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.boldleft {
+    font-size: 20px !important;
+}
+
+.mediumleft {
+    font-size: 18px !important;
+}
+
+.textleft {
+    font-size: 18px !important;
+}
+
+.medium.small {
+    font-size: 16px;
+}
+
+.account-wrapper,
+.devices-wrapper {
+    background: #f8fafd;
+}
+
+.account-info,
+.account-notification {
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 4px;
+    padding: 13px 12px;
+}
+
+.account-info p {
+    margin-bottom: 6px;
+}
+
+.btn.btn-upgrade {
+    background: #2aabcb;
+    font-weight: 600;
+    border: none;
+    padding: 3px 10px;
+    font-size: 14px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.account-form {
+    margin-top: 20px;
+}
+
+.account-form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.account-form .form-group label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    left: 8px;
+}
+
+.account-form .form-group label div {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.account-form .form-group label a {
+    text-decoration: none;
+    color: black;
+    line-height: 3;
+}
+
+.acc-password {
+    font-size: 0px;
+}
+
+.eyepassword {
+    cursor: pointer;
+}
+
+.acc-item {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.acc-item:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+.text-label {
+    font-size: 16px;
+}
+
+.account-form .form-group label img {
+    min-width: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.account-form .form-group input {
+    height: 50px;
+    line-height: 37px;
+    background: #fff;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border: 1px solid #ced4da;
+}
+
+.btn-switch {
+    display: grid;
+    grid-template-columns: 1fr 35px;
+    gap: 0 10px;
+    margin-bottom: 8px;
+}
+
+.btn-switch-text p {
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+
+.account-notification p.message {
+    margin-bottom: 50px;
+}
+
+.device-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.device-title img {
+    width: 22px;
+    min-width: 20px;
+}
+
+.device-title h2 {
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.device-title h2 div {
+    padding: 0 0 0 5px;
+}
+
+.device-title h2 a {
+    color: #36383b;
+    font-size: 18px;
+    margin: 0 0 0 10px;
+    text-align: left;
+    max-width: 22px;
+    line-height: 2;
+    padding: 0;
+}
+
+.devices-wrapper .account-info {
+    margin-top: 35px;
+    height: 100%;
+}
+
+.devices-wrapper .account-notification {
+    margin-top: 100px;
+}
+
+.devices-wrapper .btn-switch {
+    margin-bottom: 20px;
+}
+
+.devices-wrapper .account-info .bold.big {
+    margin-bottom: 20px;
+}
+
+.device-info {
+    display: grid;
+    grid-template-columns: 35px 23fr 1fr;
+    gap: 0 8px;
+}
+
+.device-info .description p.bold.big {
+    margin-bottom: 3px;
+}
+
+.device-info .description p.medium {
+    color: #5a5a5b;
+    font-size: 16px;
+}
+
+.info-dropdown button {
+    padding: 0;
+    font-size: 12px;
+    color: #2aabcb;
+}
+
+.info-dropdown button:focus {
+    box-shadow: none;
+}
+
+.info-dropdown ul.dropdown-menu {
+    min-width: 160px;
+    padding: 0;
+    background: #fff;
+    cursor: pointer;
+    top: 1rem !important;
+}
+
+@media all and (max-width:768px) {
+    .info-dropdown ul.dropdown-menu {
+        left: -1rem !important;
+    }
+}
+
+@media all and (min-width:769px) {
+    .info-dropdown ul.dropdown-menu {
+        left: -10rem !important;
+    }
+}
+
+@media all and (min-width:1220px) {
+    .info-dropdown ul.dropdown-menu {
+        left: -12.5rem !important;
+    }
+}
+
+@media all and (min-width:1380px) {
+    .info-dropdown ul.dropdown-menu {
+        left: -10.5rem !important;
+    }
+}
+
+.info-dropdown ul li {
+    padding: 12px 15px;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #646569;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.info-dropdown ul li:last-child {
+    background: #f9fafe;
+}
+
+.info-dropdown ul li .device-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.info-dropdown ul li img {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.devices-userguide {
+    display: none;
+    margin-top: 15px;
+}
+
+.device-img {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media all and (max-width: 540px) {
+    .device-img img {
+        width: 110px;
+        /* margin: 2rem auto; */
+    }
+}
+
+@media all and (min-width: 540px) {
+    .device-img img {
+        width: 128px;
+    }
+}
+
+.devicesField label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 12px;
+    color: #36383b;
+}
+
+.devicesField .scrollableList ul {
+    max-height: 195px;
+}
+
+.devicesField .scrollableList ul li {
+    font-size: 17px;
+}
+
+.devicesField .scrollableList ul li:first-child {
+    font-weight: bold;
+    border-bottom: 1px solid #f8fafd;
+}
+
+.SelectBold {
+    font-weight: bold !important;
+}
+
+.scrollableList .selectedOption::after {
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    top: 15px;
+}
+
+.devices-userguide ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: 500;
+    color: #36383b;
+    font-size: 18px;
+}
+
+.devices-userguide ul li {
+    margin-bottom: 23px;
+}
+
+.devices-userguide ul li strong {
+    color: #3c3e41;
+}
+
+.devices-userguide ul li img {
+    width: 28px;
+    margin-left: 38px;
+    margin-right: 10px;
+}
+
+.devices-userguide ul li p.bold.small {
+    font-size: 18px;
+}
+
+.devices-list {
+    margin-bottom: 15px;
+}
+
+.devices-list ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.devices-list ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f8fafd;
+    cursor: pointer;
+}
+
+.devices-list ul li:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+.assigned img.assign {
+    display: block;
+    cursor: default;
+}
+
+.assigned img.no-assign {
+    display: none;
+}
+
+img.assign {
+    display: none;
+}
+
+img.no-assign {
+    display: block;
+    margin-top: 0.8rem;
+}
+
+.link-title {
+    text-decoration: none;
+    color: #36383b;
+}
+
+.link-title:hover {
+    color: #36383b;
+}
+
+.device-content {
+    margin-left: 31px;
+    min-width: 300%;
+}
+
+.device-content span {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.device-content span:last-child {
+    margin-bottom: 0;
+}
+
+.device-content .device-name {
+    font-weight: bold;
+}
+
+.device-info .device-img {
+    width: 55px;
+    margin: auto;
+}
+
+.devicesIndex-wrapper .cardBody {
+    padding: 25px 15px 80px;
+}
+
+.devices-list ul li .arrow {
+    font-size: 12px;
+    color: #2aabcb;
+    margin-right: 20px;
+}
+
+.button button.btn {
+    font-weight: 600;
+    padding: 6px 52px;
+    background: #2aabcb;
+    border: none;
+    border-radius: 0.35rem;
+    outline: none;
+    font-size: 18px;
+}
+
+.button button.btn:focus {
+    box-shadow: none;
+}
+
+.device-detail {
+    max-width: 80%;
+    margin: 20px auto 130px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.device-detail-content {
+    text-align: center;
+    font-weight: 600;
+    color: #626466;
+    display: inline-block;
+    padding-top: 15px;
+    border-top: 1px solid #f8fafd;
+}
+
+.device-detail-content strong {
+    color: #3c3e41;
+}
+
+.editDeviceField label,
+.editDeviceField input.form-control {
+    display: block;
+    font-weight: 500;
+}
+
+.editDeviceField input.form-control {
+    font-size: 16px;
+    height: 40px;
+}
+
+.editDeviceField:not(.editAccField) {
+    margin-bottom: 300px;
+}
+
+.input-button {
+    position: relative;
+}
+
+.showHidepass {
+    border: none;
+    background: transparent;
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.showHidepass img {
+    width: 22px;
+}
+
+.formField.editAccField .form-label {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.formField.editAccField input.form-control {
+    font-weight: 600;
+}
+
+.formField.editAccField {
+    margin-bottom: 30px;
+}
+
+.formField.editAccField+.button {
+    margin-top: 130px;
+}
+
+.genderField.editDeviceField .form-label,
+.genderField.editDeviceField .scrollableList ul,
+.genderField.editDeviceField .scrollableList .selectedOption {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.formField.searchSelect .scrollableList .selectedOption::after {
+    display: none;
+}
+
+.selectedOption .button-search {
+    display: none;
+}
+
+.searchSelect .selectedOption {
+    position: relative;
+    padding-left: 45px;
+}
+
+.searchSelect .selectedOption .button-search {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: transparent;
+    border: none;
+    width: 40px;
+    font-size: 16px;
+    color: #2aabcb;
+}
+
+.editAccount-wrapper .scrollableList ul {
+    top: 110%;
+    bottom: inherit;
+}
+
+@media (max-width: 768px) {
+    .account-wrapper .row {
+        --bs-gutter-x: 0;
+    }
+    .device-title {
+        padding: 0 20px;
+    }
+    .devices-wrapper .account-notification {
+        margin-top: 10px;
+    }
+    .device-detail {
+        margin: 20px auto;
+    }
+    .editDeviceField {
+        margin-bottom: 100px;
+    }
+    .formField.editAccField+.button {
+        margin-top: 50px;
+    }
+}
+
+
+/* ////add */
+
+@media all and (max-width:768px) {
+    .save {
+        margin-top: 50%;
+    }
+}
+
+@media all and (min-width:768px) {
+    .save {
+        margin-top: 0;
+    }
+}
+
+
+/* .save {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    margin-top: 100%;
+} */
+
+.nonpro-device {
+    text-decoration: none;
+    color: #5a5a5b;
+}

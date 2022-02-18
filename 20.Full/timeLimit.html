@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>My Family</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/all.min.js"></script>
+</head>
+
+<body class="add-child-template dashboard-template">
+    <header>
+        <div class="headerContent">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12 col-12 logo">
+                    <a href="#"><img src="images/logo2.jpg" alt="" class="logoimg"></a>
+                </div>
+                <div class="col-lg-7 col-7 page-title justify-item-center">
+                    <div class="navbars-wrapper">
+                        <a href="#navbars" class="navbars" data-bs-toggle="offcanvas" role="button" aria-controls="navbars">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h1>Hoạt động của con</h1>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-5 accountInfo dropdown">
+                    <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                    <h4 class="accountName">LiemNguyen <i class="fas fa-chevron-down bt-arrow" style="color: #2aabcb; font-size: 14px;"></i></h4>
+                    <!-- <button class="rightClick btn dropdown-toggle" id="accountDroppdown"> -->
+                    <!-- </button> -->
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="accountDroppdown" aria-labelledby="accountDroppdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/help.png" alt="Trung tâm hỗ trợ">Trung tâm hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/logOut.png" alt="Đăng xuất">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="left-sidebar" tabindex="-1" id="navbars" aria-labelledby="navbarsLable">
+                <div class="navigation-menu">
+                    <div class="scrollable-content">
+                        <ul class="menu-list">
+                            <li title="My family" class="menu-item" role="navigation">
+                                <a class="menu-anchor menu-anchor-active" href="#/">
+                                    <img src="images/my-family.png" alt="" class="show" />
+                                    <img src="images/MyFamily2.png" alt="" class="hide" />
+                                    <span>Hoạt động<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Danh sách thiết bị" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/devices.png" alt="" class="show" />
+                                    <img src="images/Devices2.png" alt="" class="hide" />
+                                    <span>Thiết bị<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Vị trí của con" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/my-location.png" alt="" class="show" />
+                                    <img src="images/MyLocation2.png" alt="" class="hide" />
+                                    <span>Vị trí <br>của con</span>
+                                </a>
+                            </li>
+                            <li title="Tài khoản" class="menu-item" role="navigation" class>
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/account.png" alt="" class="show" />
+                                    <img src="images/Account2.png" alt="" class="hide" />
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="license-info-container">
+                    <ul class="license-info-optionals">
+                        <li class="license-infoTitle"><span>Bản dùng thử đặc biệt</span></li>
+                        <li class="license-info-subTitle">
+                            <span>Hết hạn sau 3 ngày</span>
+                            <a class="upgrade" href="#">Nâng cấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="dashboard-wrapper timeLimit-wrapper overflow">
+                    <div class="columnMain-container row mx-auto">
+                        <div class="dashboard-content col-12 row mx-auto p-0">
+                            <div class="content-left col-xl-3 p-0">
+                                <div class="acc-info">
+                                    <img src="images/icon3.png" alt="">
+                                    <span class="acc-devices">DucMinhWindows</span>
+                                    <span class="acc-status">Offline</span>
+                                </div>
+                                <ul class="acc-activities">
+                                    <li>
+                                        <a href="dashboard.html">
+                                            <img src="images/dashboard.png" alt=""> Bảng tóm tắt
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="timeline.html">
+                                            <img src="images/Timeline.png" alt=""> Dòng thời gian hoạt động
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <div class="title">
+                                            <img src="images/config.png" alt=""> Thiết lập quy tắc
+                                            <button class="btn dropdown-toggle" data-toggle="collapse" type="button" data-target="#activesDropdown" aria-expanded="false" aria-controls="activesDropdown"><i class="fas fa-chevron-down"></i></button>
+                                        </div>
+                                        <div id="activesDropdown" class="collapse show">
+                                            <ul>
+                                                <li class="active__color">
+                                                    <a href="timeLimit.html">
+                                                        <img src="images/clock.png" alt=""> Giới hạn thời gian hàng ngày
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="restrictTime.html">
+                                                        <img src="images/restrictTime.png" alt=""> Hạn chế thời gian
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="webFilter.html">
+                                                        <img src="images/language.png" alt=""> Lọc Web
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="youtuube_monitor.html">
+                                                        <img src="images/youtube.png" alt=""> Giám sát Youtube
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="game__App.html">
+                                                        <img src="images/Games.png" alt=""> Trò chơi & ứng dụng
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="call_sms.html">
+                                                        <img src="images/callSMS.png" alt=""> Cuộc gọi & Tin nhắn
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="location.html">
+                                                        <img src="images/location.png" alt=""> Giám sát vị trí
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-right content-right--TimeLimit p-0 col-12 col-xl-9 row">
+                                <div class="row col-12 icon-icon" id="icon-icon">
+                                    <div class="arrow-dashboard col-9">
+                                        <a href="">
+                                            <img src="./images/Arrow-left.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="setting-dashboard col-3">
+                                        <img src="./images/icon-Setting.png" alt="" class="m-auto">
+                                    </div>
+                                </div>
+                                <div class="content-TimeLimit content-TimeLimit--TimeLimit">
+                                    <div class="row content">
+                                        <div class="Time-title Time-title--DesktopTimelimit">
+                                            Giới hạn thời gian hàng ngày
+                                        </div>
+                                        <div class="Time-limit Time-limit--Time">
+                                            <div class="limit-title">
+                                                Đặt giới hạn thời gian sử dụng thiết bị mỗi ngày
+                                                <a data-bs-toggle="modal" data-bs-target="#noteTime">
+                                                    <img src="./images/help.png" alt="">
+                                                </a>
+                                            </div>
+                                            <!-- <div class="limit-link">
+                                                Thêm thông tin
+                                            </div> -->
+                                            <div class="col-12 limit-day limit-day--TimeLimit">
+                                                <div class="col-12 col-sm-9 row">
+                                                    <div class="col-1 row day-item day-item--TimeLimit day-active--TimeLimit">
+                                                        <div>T2</div>
+                                                    </div>
+                                                    <div class="col-1 row day-item day-item--TimeLimit">
+                                                        <div>T3</div>
+                                                    </div>
+                                                    <div class="col-1 row day-item day-item--TimeLimit">
+                                                        <div>T4</div>
+                                                    </div>
+                                                    <div class="col-1 row day-item day-item--TimeLimit">
+                                                        <div>T5</div>
+                                                    </div>
+                                                    <div class="col-1 row day-item day-item--TimeLimit">
+                                                        <div>T6</div>
+                                                    </div>
+                                                    <div class="col-1 row day-item day-item--TimeLimit">
+                                                        <div>T7</div>
+                                                    </div>
+                                                    <div class="col-1 row day-item day-item--TimeLimit">
+                                                        <div>CN</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class=" col-12 limit-cricle limit-cricle--TimeLimit">
+                                                <div class="col-4 row cricle-bg cricle-bg--TimeLimit">
+
+                                                    <div class="cricle-tick cricle-tick--TimeLimit row">
+
+                                                        <div class="cricle-texttime cricle-texttime--TimeLimit">
+                                                            <div class="title title--TimeLimit">
+                                                                Giới hạn
+                                                            </div>
+                                                            <div class="digital row">
+                                                                <div class="hours hours--TimeLimit row col-5 m-auto p-0">
+                                                                    <div class="number col-12 p-0">
+                                                                        24
+                                                                    </div>
+                                                                    <div class="text col-12 m-auto p-0">
+                                                                        Giờ
+                                                                    </div>
+                                                                </div>
+                                                                <div class="dot col-2 p-0">
+                                                                    :
+                                                                </div>
+                                                                <div class="minute minute--TimeLimit row col-5 m-auto p-0">
+                                                                    <div class="number col-12 p-0">
+                                                                        00
+                                                                    </div>
+                                                                    <div class="text col-12 m-auto p-0">
+                                                                        Phút
+                                                                    </div>
+                                                                </div>
+                                                                <div class="line col-9">
+                                                                </div>
+                                                                <div class="day day--TimeLimit col-9" id="textday">
+                                                                    Thứ hai
+                                                                </div>
+                                                                <div class="line col-6">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mouse-tick mouse-tick--TimeLimit col-12 m-auto row">
+                                                            <div class="space space--TimeLimit col-3 m-auto">
+
+                                                            </div>
+                                                            <div class="cricle-mouse-bg cricle-mouse-bg--TimeLimit row col-3 m-auto p-0" id='cricle'>
+                                                                <div class="cricle-mouse cricle-mouse--TimeLimit row col-3 m-auto p-0">
+                                                                    <div class="dott col-3">
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="group-tick col-12 m-auto p-0">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="cricle-tick--round cricle-tick--round--TimeLimit row p-0 m-0">
+                                                        <div class="it it--15 it--15--TimeLimit col-12 row p-0 m-0">
+                                                            <div class="item item--1 item--1--TimeLimit col-6 p-0 m-0">
+
+                                                            </div>
+                                                            <div class="item item--5 item--5--TimeLimit col-6 p-0 m-0">
+                                                            </div>
+                                                        </div>
+                                                        <div class="it it--23 it--23--TimeLimit col-12 row p-0 m-0">
+
+                                                            <div class="item--iso item--3 item--3--TimeLimit right col-6 p-0 m-0">
+
+                                                            </div>
+                                                            <div class="item item--iso item--2 item--2--TimeLimit left col-6 p-0 m-0">
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="it it--46 col-12 row p-0 m-0">
+
+                                                            <div class="item item--6 item--6--TimeLimit col-6 p-0 m-0">
+
+                                                            </div>
+                                                            <div class="item item--4 item--4--TimeLimit col-6 p-0 m-0">
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="limit-grbt limit-grbt--TimeLimit mx-auto row">
+                                                <div class="bt bt-clock row col-6">
+                                                    <div class="box-clock col-8">
+                                                        <div class="icon clock clock--TimeLimit row col-12">
+                                                            <img src="./images/icon_Cai_Lai.png" alt="" class="col-12">
+                                                        </div>
+                                                        <div class="text text-clock--TimeLimit">
+                                                            Cho Phép
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="bt bt-lock row col-6">
+                                                    <div class="box-lock col-8">
+                                                        <div class="icon lock lock--TimeLimit row col-12">
+                                                            <img src="./images/keyBlock.png" alt="" class="col-12">
+                                                        </div>
+                                                        <div class="text text-lock--TimeLimit">
+                                                            Chặn
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="Time-box">
+
+                                            <div class="Time-setting col-12">
+
+                                                <div class="setting-title">
+                                                    Cài đặt
+                                                </div>
+                                                <div class="setting-title des">
+
+                                                    Khi hết thời gian sẽ:
+                                                </div>
+                                                <div class="setting-title-child row">
+                                                    <div class="title col-9 col-sm-10">
+                                                        1. Khóa điều hướng
+                                                    </div>
+                                                    <div class="btn-switch-button col-2 btn">
+                                                        <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text col-11">
+                                                    Ngăn chặn việc duyệt web và truy cập internet
+                                                </div>
+                                                <div class="setting-title-child row">
+                                                    <div class="title col-9 col-sm-10">
+                                                        2. Khóa thiết bị
+                                                    </div>
+                                                    <div class="btn-switch-button col-2 btn">
+                                                        <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text col-11">
+                                                    Chặn ứng dụng trên Android và ẩn ứng dụng trên thiết bị iOS. Đăng xuất khỏi máy tính.
+                                                </div>
+                                            </div>
+
+                                            <div class="Time-noti col-12">
+                                                <div class="noti-title setting-title-child">
+                                                    Thông báo
+                                                </div>
+                                                <div class="noti-title row">
+                                                    <div class="title setting-title-child col-10">
+                                                        Cảnh báo cho tôi
+                                                    </div>
+                                                    <div class="btn-switch-button col-2 btn">
+                                                        <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="text col-11">
+                                                    Nhận cảnh báo khi con sử dụng quá thời gian giới hạn
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-sys">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#settingPopup">
+                                        <img src="images/Setting.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="settingPopup" tabindex="-1" role="dialog" aria-labelledby="settingPopupLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="setting-list">
+                        <li>
+                            <a href="#">
+                                <span class="title">Thêm thiết bị</span>
+                                <span class="icon"><img src="images/phone.png" alt=""></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="setupRules.html">
+                                <span class="title">Thiết lập quy tắc</span>
+                                <span class="icon"><img src="images/cog.png" alt=""></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <img src="images/close-popup.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade board-modal" id="noteTime" tabindex="-1" aria-labelledby="noteTimeLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/Close.png" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/clock.png" alt="Clock">
+                    <h5>Thời gian sử dụng thiết bị</h5>
+                    <p><b>Thời gian sử dụng thiết bị</b> là <br>khoảng thời gian mà màn hình của <br>thiết bị hoạt động.</p>
+                    <p>Lưu ý! Thời gian hiện thị trên <br><b>Dòng thời gian hoạt động</b> hoàn toàn<br> là <b>thời gian hoạt động</b> và không bao<br> gồm thời gian sử dụng thiết bị.</p>
+                    <p><b>Thời gian hoạt động</b> là lượng thời<br> gian hoạt động thực tế được Mokinet<br> phát hiện, cụ thể là thời gian dành<br> cho các ứng dụng hoặc lướt web.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="SaveStyle SaveStyle--TimeLimit">
+        <div class="savecolor">
+        </div>
+        <div class="position">
+        </div>
+        <div class="setting"></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/effect.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+</body>
+
+</html>

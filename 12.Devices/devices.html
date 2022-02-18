@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách thiết bị</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/all.min.js"></script>
+</head>
+
+<body class="add-child-template">
+    <header>
+        <div class="headerContent">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12 col-12 logo">
+                    <a href="#"><img src="images/logo2.jpg" alt="" class="logoimg"></a>
+                </div>
+                <div class="col-lg-7 col-10 page-title justify-item-center">
+                    <div class="navbars-wrapper">
+                        <a href="#navbars" class="navbars" data-bs-toggle="offcanvas" role="button" aria-controls="navbars">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h1>Danh sách thiết bị</h1>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-2 accountInfo dropdown">
+                    <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                    <h4 class="accountName">LiemNguyen <i class="fas fa-chevron-down bt-arrow" style="color: #2aabcb; font-size: 14px;"></i></h4>
+                    <!-- <button class="rightClick btn dropdown-toggle" id="accountDroppdown"> -->
+                    <!-- </button> -->
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="accountDroppdown" aria-labelledby="accountDroppdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/help.png" alt="Trung tâm hỗ trợ">Trung tâm hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/logOut.png" alt="Đăng xuất">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="left-sidebar" tabindex="-1" id="navbars" aria-labelledby="navbarsLable">
+                <div class="navigation-menu">
+                    <div class="scrollable-content">
+                        <ul class="menu-list">
+                            <li title="My family" class="menu-item" role="navigation">
+                                <a class="menu-anchor menu-anchor-active" href="#/">
+                                    <img src="images/my-family.png" alt="" class="show" />
+                                    <img src="images/MyFamily2.png" alt="" class="hide" />
+                                    <span>Hoạt động<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Danh sách thiết bị" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/devices.png" alt="" class="show" />
+                                    <img src="images/Devices2.png" alt="" class="hide" />
+                                    <span>Thiết bị<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Vị trí của con" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/my-location.png" alt="" class="show" />
+                                    <img src="images/MyLocation2.png" alt="" class="hide" />
+                                    <span>Vị trí <br>của con</span>
+                                </a>
+                            </li>
+                            <li title="Tài khoản" class="menu-item" role="navigation" class>
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/account.png" alt="" class="show" />
+                                    <img src="images/Account2.png" alt="" class="hide" />
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="license-info-container">
+                    <ul class="license-info-optionals">
+                        <li class="license-infoTitle"><span>Bản dùng thử đặc biệt</span></li>
+                        <li class="license-info-subTitle">
+                            <span>Hết hạn sau 3 ngày</span>
+                            <a class="upgrade" href="#">Nâng cấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="full-container">
+                    <div class="columnMain-container">
+                        <div class="account-wrapper devices-wrapper">
+                            <div class="row">
+                                <div class="col-md-7 col-12">
+                                    <div class="device-title">
+                                        <h2 class="Text-Device row col-12"><a href="./devicesIndex.html" class="backToPrevious"><i class="fas fa-arrow-left"></i></a>Mobile-Android</h2>
+                                        <a href="" class="link-editdevice"><img src="images/edit.png" alt=""></a>
+                                    </div>
+                                    <div class="account-info">
+                                        <p class="bold big">Được gán cho:</p>
+                                        <div class="device-info">
+                                            <div class="avatar">
+                                                <img src="images/icon3.png" alt="">
+                                            </div>
+                                            <div class="description">
+                                                <p class="bold big">Nguyễn Xuân Đức Minh</p>
+                                                <p class="medium">Hoạt động lần cuối: 12:01 sáng, ngày 19/9/2021</p>
+                                            </div>
+                                            <div class="info-dropdown dropdown">
+                                                <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false"><i class="fas fa-chevron-down"></i></button>
+                                                <ul class="dropdown-menu" aria-labelledby="accountDroppdown">
+                                                    <li><span><a href="" class="nonpro-device">Không bảo vệ</a></span></li>
+                                                    <li>
+                                                        <img src="images/pig.png" alt="">
+                                                        <span class="device-name">DucMinhWindow</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-12">
+                                    <div class="account-notification">
+                                        <p class="bold big message">Cấu hình</p>
+
+                                        <!-- <div class="btn-switch">
+                                            <div class="btn-switch-text">
+                                                <p class="bold big">Bảo vệ cấu hình hệ thống Android</p>
+                                                <p class="medium small">Yêu cầu mật khẩu Mokinet để truy cập cấu hình hệ thống Android</p>
+                                            </div>
+                                            <div class="btn-switch-button">
+                                                <label class="switch">
+													<input type="checkbox">
+													<span class="slider round"></span>
+												</label>
+                                            </div>
+                                        </div>
+                                        <div class="btn-switch">
+                                            <div class="btn-switch-text">
+                                                <p class="bold big">Bảo vệ cấu hình Mokinet</p>
+                                                <p class="medium small">Yêu cầu mật khẩu Mokinet để đăng nhập ứng dụng Mokinet trên thiết bị này</p>
+                                            </div>
+                                            <div class="btn-switch-button">
+                                                <label class="switch">
+													<input type="checkbox" checked>
+													<span class="slider round"></span>
+												</label>
+                                            </div>
+                                        </div> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade limitChildrenPopup" id="limitChildren" tabindex="-1" aria-labelledby="limitChildrenLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/warning.png" alt="Warning">
+                    <h5>Đã đạt đến giới hạn</h5>
+                    <p>Tài khoản hiện tại của bạn giới hạn bảo vệ 3 thiết bị và 3 trẻ. Vui lòng nâng cấp tài khoản để có thể bảo vệ nhiều hơn</p>
+                    <a href="#">Xem các tính năng sau khi nâng cấp</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-upgrade">Nâng cấp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Thumnail Modal -->
+    <div class="modal fade addThumnailPopup" id="addThumnailPopup" tabindex="-1" aria-labelledby="addThumnailLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Lựa chọn ảnh đại diện</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row gx-4">
+                        <div class="col-4 mb-3">
+                            <input type="radio" class="input-hidden" id="thumnail1" name="thumnail" checked>
+                            <label for="thumnail1">
+								<img src="images/icon1.png" alt="Icon1">
+							</label>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <input type="radio" class="input-hidden" id="thumnail4" name="thumnail">
+                            <label for="thumnail4">
+								<img src="images/icon4.png" alt="Icon4">
+							</label>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <input type="radio" class="input-hidden" id="thumnail2" name="thumnail">
+                            <label for="thumnail2" class="w-85">
+								<img src="images/icon2.png" alt="Icon2">
+							</label>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <input type="radio" class="input-hidden" id="thumnail3" name="thumnail">
+                            <label for="thumnail3">
+								<img src="images/icon3.png" alt="Icon3">
+							</label>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <input type="radio" class="input-hidden" id="thumnail6" name="thumnail">
+                            <label for="thumnail6">
+								<img src="images/icon6.png" alt="Icon6">
+							</label>
+                        </div>
+                        <div class="col-4 mb-3">
+                            <input type="radio" class="input-hidden" id="thumnail5" name="thumnail">
+                            <label for="thumnail5" class="w-85">
+								<img src="images/icon5.png" alt="Icon5">
+							</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/effect.js"></script>
+</body>
+
+</html>

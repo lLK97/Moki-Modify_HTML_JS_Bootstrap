@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/all.min.js"></script>
+</head>
+
+<body class="add-child-template dashboard-template">
+    <header>
+        <div class="headerContent">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12 col-12 logo">
+                    <a href="#"><img src="images/logo2.jpg" alt="" class="logoimg"></a>
+                </div>
+                <div class="col-lg-7 col-7 page-title justify-item-center">
+                    <div class="navbars-wrapper">
+                        <a href="#navbars" class="navbars" data-bs-toggle="offcanvas" role="button" aria-controls="navbars">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h1>Hoạt động của con</h1>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-5 accountInfo dropdown">
+                    <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                    <h4 class="accountName">LiemNguyen <i class="fas fa-chevron-down bt-arrow" style="color: #2aabcb; font-size: 14px;"></i></h4>
+                    <!-- <button class="rightClick btn dropdown-toggle" id="accountDroppdown"> -->
+                    <!-- </button> -->
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="accountDroppdown" aria-labelledby="accountDroppdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/help.png" alt="Trung tâm hỗ trợ">Trung tâm hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/logOut.png" alt="Đăng xuất">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="left-sidebar" tabindex="-1" id="navbars" aria-labelledby="navbarsLable">
+                <div class="navigation-menu">
+                    <div class="scrollable-content">
+                        <ul class="menu-list">
+                            <li title="My family" class="menu-item" role="navigation">
+                                <a class="menu-anchor menu-anchor-active" href="#/">
+                                    <img src="images/my-family.png" alt="" class="show" />
+                                    <img src="images/MyFamily2.png" alt="" class="hide" />
+                                    <span>Hoạt động<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Danh sách thiết bị" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/devices.png" alt="" class="show" />
+                                    <img src="images/Devices2.png" alt="" class="hide" />
+                                    <span>Thiết bị<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Vị trí của con" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/my-location.png" alt="" class="show" />
+                                    <img src="images/MyLocation2.png" alt="" class="hide" />
+                                    <span>Vị trí <br>của con</span>
+                                </a>
+                            </li>
+                            <li title="Tài khoản" class="menu-item" role="navigation" class>
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/account.png" alt="" class="show" />
+                                    <img src="images/Account2.png" alt="" class="hide" />
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="license-info-container">
+                    <ul class="license-info-optionals">
+                        <li class="license-infoTitle"><span>Bản dùng thử đặc biệt</span></li>
+                        <li class="license-info-subTitle">
+                            <span>Hết hạn sau 3 ngày</span>
+                            <a class="upgrade" href="#">Nâng cấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="dashboard-wrapper timeLimit-wrapper">
+                    <div class="columnMain-container">
+                        <div class="dashboard-content">
+                            <div class="content-left">
+                                <div class="acc-info">
+                                    <img src="images/icon3.png" alt="">
+                                    <span class="acc-devices">DucMinhWindows</span>
+                                    <span class="acc-status">Offline</span>
+                                </div>
+                                <ul class="acc-activities">
+                                    <li>
+                                        <a href="dashboard.html">
+                                            <img src="images/dashboard.png" alt=""> Bảng tóm tắt
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="timeline.html">
+                                            <img src="images/Timeline.png" alt=""> Dòng thời gian hoạt động
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <div class="title">
+                                            <img src="images/config.png" alt=""> Thiết lập quy tắc
+                                            <button class="btn dropdown-toggle" data-toggle="collapse" type="button" data-target="#activesDropdown" aria-expanded="false" aria-controls="activesDropdown"><i class="fas fa-chevron-down"></i></button>
+                                        </div>
+                                        <div id="activesDropdown" class="collapse show">
+                                            <ul>
+                                                <li>
+                                                    <a href="timeLimit.html">
+                                                        <img src="images/clock.png" alt=""> Giới hạn thời gian hàng ngày
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="restrictTime.html">
+                                                        <img src="images/restrictTime.png" alt=""> Hạn chế thời gian
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="webFilter.html">
+                                                        <img src="images/language.png" alt=""> Lọc Web
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="youtuube_monitor.html">
+                                                        <img src="images/youtube.png" alt=""> Giám sát Youtube
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="game__App.html">
+                                                        <img src="images/Games.png" alt=""> Trò chơi & ứng dụng
+                                                    </a>
+                                                </li>
+                                                <li class="active__color">
+                                                    <a href="call_sms.html">
+                                                        <img src="images/callSMS.png" alt=""> Cuộc gọi & Tin nhắn
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./location.html">
+                                                        <img src="images/location.png" alt=""> Giám sát vị trí
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-right content-right--call p-0 col-12 col-xl-9">
+                                <div class="row col-12 icon-icon">
+                                    <div class="arrow-dashboard col-9">
+                                        <a href="">
+                                            <img src="./images/Arrow-left.png" alt="">
+                                        </a>
+                                    </div>
+                                    <!-- <div class="setting-dashboard col-3">
+                                        <img src="./images/icon-Setting.png" alt="" class="m-auto">
+                                    </div> -->
+                                </div>
+                                <div class="content-TimeLimit content-TimeLimit--call">
+                                    <div class="row">
+                                        <div class="Time-title">
+                                            Cuộc gọi và SMS
+                                        </div>
+                                        <div class="Filter-limit col-sm-12 col-lg-12 col-xl-9">
+                                            <div class="row Tab">
+                                                <div class="col-12 row m-auto">
+                                                    <div class="col-6 Tab-item Tab-item--call Tab-rule Tab-active">
+                                                        Quy tắc
+                                                    </div>
+                                                    <div class="col-6 Tab-item Tab-item--call Tab-web">
+                                                        Danh bạ
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Categories Categories--call">
+                                                <div class="row Apply-filter">
+                                                    <div class="text-filter col-10">
+                                                        Bật giám sát cuộc gọi và tin nhắn SMS
+                                                    </div>
+                                                    <div class="btn-switch-button col-4 col-sm-4 col-xl-4 co-lg-4 btn btn-Webfilter Enabled">
+                                                        <label class="switch">
+                                                        <input type="checkbox" checked="">
+                                                        <span class="slider round btn-monitor-sms"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="row my-3 Apply-filter">
+                                                    <div class="text-filter col-10">
+                                                        Cho phép cha mẹ xem nội dung SMS
+                                                    </div>
+                                                    <div class="btn-switch-button col-4 col-sm-4 col-xl-4 co-lg-4 btn btn-Webfilter Enabled">
+                                                        <label class="switch">
+                                                        <input type="checkbox" checked="">
+                                                        <span class="slider round btn-view-sms"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="my-4 title__call-sms">
+                                                    Tùy chọn chặn cuộc gọi:
+                                                </div>
+                                                <div class="my-3 des__call-sms">
+                                                    Đặt quy tắc cho cuộc gọi đến và gọi đi trên Android. * Không thể chặn tin nhắn SMS *
+                                                </div>
+                                                <div class="Board-Status Board-Status__call--rule row">
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Accept.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Cho phép tất cả</span>
+                                                    </div>
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Block.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Chặn tất cả</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="AddWeb">
+                                                <div class="description">
+                                                    <div class="text-Web">
+                                                        Đặt quy tắc cho các cuộc gọi đến và đi cho các số liên lạc cụ thể
+                                                        <!-- <a data-bs-toggle="modal" data-bs-target="#filterWeb"><img src="./images/help.png" alt=""></a> -->
+                                                    </div>
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="col-12 Item-WebNone Item-WebNone--call">
+                                                    Chưa có số điện thoại nào được thêm vào
+                                                </div>
+                                            </div>
+                                            <!-- <div class="Board-Status--UpdateAddWeb Board-Status--UpdateCall Board-Status--UpdateCall--inside row">
+                                                <div class="col-12 item m-0 row">
+                                                    <div class="col-2 img">
+                                                        <img src='./images/Icon_Accept.png' alt="">
+                                                    </div>
+                                                    <span class="text-filter col-10">Luôn cho phép cuộc gọi</span>
+                                                </div>
+                                                <div class="col-12 item m-0 row">
+                                                    <div class="col-2 img">
+                                                        <img src='./images/Icon_Block.png' alt="">
+                                                    </div>
+                                                    <span class="text-filter col-10">Luôn chặn cuộc gọi</span>
+                                                </div>
+                                                <div class="col-12 item m-0 row">
+                                                    <div class="col-2 img">
+                                                        <img src='./images/Delete.png' alt="">
+                                                    </div>
+                                                    <span class="text-filter col-10">Xóa liên hệ</span>
+                                                </div>
+
+                                            </div> -->
+                                            <!-- <div class="button button--call button--call-inside">
+
+                                            </div> -->
+                                            <div class="space-white">
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- //////////////////////Add Web -->
+
+                                        <div class="AddWeb-title col-12">
+                                            <img src="./images/Arrow-left.png" alt="" class='back-filter' /> Thêm liên hệ
+                                        </div>
+
+                                        <div class="AddWeb-content AddWeb-content--call col-sm-12 col-lg-12 col-xl-9">
+                                            <div class="title my-3">
+                                                Tên:
+                                            </div>
+                                            <div class="col-12 row textAddWeb textcall textcall--name">
+                                                <input type="url" class="col-12 text-AddWeb">
+                                                <div class='label-noti'></div>
+                                            </div>
+                                            <div class="title my-3">
+                                                Số điện thoại:
+                                            </div>
+                                            <div class="col-12 row textAddWeb textcall textcall--number">
+                                                <input type="url" class="col-12 text-AddWeb">
+                                                <div class='label-noti'></div>
+                                            </div>
+                                            <div class="Board-Status--AddWeb row">
+                                                <div class="col-12 item m-0 row">
+                                                    <div class="col-1 img">
+                                                        <img src='./images/Icon_Accept.png' alt="">
+                                                    </div>
+                                                    <span class="text-filter col-9">Luôn cho phép cuộc gọi</span>
+                                                    <div class="cricle col-2 row">
+                                                        <input type="radio" name="AddWeb" id="" class="col-2 check" data-status='Allow' checked />
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 item m-0 row">
+                                                    <div class="col-1 img">
+                                                        <img src='./images/Icon_Block.png' alt="">
+                                                    </div>
+                                                    <span class="text-filter col-9">Luôn chặn cuộc gọi</span>
+                                                    <div class="cricle col-2 row">
+                                                        <input type="radio" name="AddWeb" id="" class="col-2" data-status='Block' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt-AddWeb">
+                                                Thêm
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="icon-sys">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#settingPopup">
+                                        <img src="images/Setting.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="Board-Status--UpdateAddWeb Board-Status--UpdateCall Board-Status--UpdateCall--outside row">
+                                    <div class="col-12 item m-0 row">
+                                        <div class="col-2 img">
+                                            <img src='./images/Icon_Accept.png' alt="">
+                                        </div>
+                                        <span class="text-filter col-10">Luôn cho phép cuộc gọi</span>
+                                    </div>
+                                    <div class="col-12 item m-0 row">
+                                        <div class="col-2 img">
+                                            <img src='./images/Icon_Block.png' alt="">
+                                        </div>
+                                        <span class="text-filter col-10">Luôn chặn cuộc gọi</span>
+                                    </div>
+                                    <div class="col-12 item m-0 row">
+                                        <div class="col-2 img">
+                                            <img src='./images/Delete.png' alt="">
+                                        </div>
+                                        <span class="text-filter col-10">Xóa liên hệ</span>
+                                    </div>
+
+                                </div>
+                                <div class="button button--call button--call-outside">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="settingPopup" tabindex="-1" role="dialog" aria-labelledby="settingPopupLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="setting-list">
+                        <li>
+                            <a href="#">
+                                <span class="title">Thêm thiết bị</span>
+                                <span class="icon"><img src="images/phone.png" alt=""></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="setupRules.html">
+                                <span class="title">Thiết lập quy tắc</span>
+                                <span class="icon"><img src="images/cog.png" alt=""></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <img src="images/close-popup.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade board-modal" id="filterWeb" tabindex="-1" aria-labelledby="filterWebLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/Close.png" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>Quy tắc lọc trang web</h4>
+                    <ul>
+                        <li>
+                            <img src="images/Icon_Accept.png" alt="">
+                            <span>Cho phép: luôn cho phép truy cập trang web đó</span>
+                        </li>
+                        <li>
+                            <img src="images/Icon_Alert.png" alt="">
+                            <span>Cho phép truy cập nhưng gửi cảnh báo tới cha mẹ</span>
+                        </li>
+                        <li>
+                            <img src="images/Icon_Block.png" alt="">
+                            <span>Chặn: luôn chặn trang web đó</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade board-modal" id="filterCategories" tabindex="-1" aria-labelledby="filterCategoriesLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/Close.png" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>Quy tắc lọc danh mục</h4>
+                    <ul>
+                        <li>
+                            <img src="images/Icon_Accept.png" alt="">
+                            <span>Cho phép truy cập tất cả các trang web thuộc danh mục đó</span>
+                        </li>
+                        <li>
+                            <img src="images/Icon_Alert.png" alt="">
+                            <span>Cho phép truy cập nhưng gửi cảnh báo tới cha mẹ</span>
+                        </li>
+                        <li>
+                            <img src="images/Icon_Block.png" alt="">
+                            <span>Chặn tất cả các trang web thuộc danh mục đó</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row PopUp">
+        <div class="col-12 row mx-auto my-2 p-0">
+            <div class='img-status col-2 my-3'>
+                <img src="images/CheckOK.png" alt="">
+            </div>
+            <div class="text col-8">
+            </div>
+            <div class="col-2 close">
+                <i class="fas fa-times mt-1" style="color: #2aabcb"></i>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="js/jquery.min.js "></script>
+    <script src="js/jquery.keyframes.js "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/swiper-bundle.min.js "></script>
+    <script src="js/index.js "></script>
+    <script src="js/effect.js "></script>
+    <script src="js/jquery.matchHeight-min.js "></script>
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/all.min.js"></script>
+</head>
+
+<body class="add-child-template dashboard-template">
+    <header>
+        <div class="headerContent">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12 col-12 logo">
+                    <a href="#"><img src="images/logo2.jpg" alt="" class="logoimg"></a>
+                </div>
+                <div class="col-lg-7 col-7 page-title justify-item-center">
+                    <div class="navbars-wrapper">
+                        <a href="#navbars" class="navbars" data-bs-toggle="offcanvas" role="button" aria-controls="navbars">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h1>Hoạt động của con</h1>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-5 accountInfo dropdown">
+                    <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                    <h4 class="accountName">LiemNguyen <i class="fas fa-chevron-down bt-arrow" style="color: #2aabcb; font-size: 14px;"></i></h4>
+                    <!-- <button class="rightClick btn dropdown-toggle" id="accountDroppdown"> -->
+                    <!-- </button> -->
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="accountDroppdown" aria-labelledby="accountDroppdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/help.png" alt="Trung tâm hỗ trợ">Trung tâm hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/logOut.png" alt="Đăng xuất">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="left-sidebar" tabindex="-1" id="navbars" aria-labelledby="navbarsLable">
+                <div class="navigation-menu">
+                    <div class="scrollable-content">
+                        <ul class="menu-list">
+                            <li title="My family" class="menu-item" role="navigation">
+                                <a class="menu-anchor menu-anchor-active" href="#/">
+                                    <img src="images/my-family.png" alt="" class="show" />
+                                    <img src="images/MyFamily2.png" alt="" class="hide" />
+                                    <span>Hoạt động<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Danh sách thiết bị" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/devices.png" alt="" class="show" />
+                                    <img src="images/Devices2.png" alt="" class="hide" />
+                                    <span>Thiết bị<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Vị trí của con" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/my-location.png" alt="" class="show" />
+                                    <img src="images/MyLocation2.png" alt="" class="hide" />
+                                    <span>Vị trí <br>của con</span>
+                                </a>
+                            </li>
+                            <li title="Tài khoản" class="menu-item" role="navigation" class>
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/account.png" alt="" class="show" />
+                                    <img src="images/Account2.png" alt="" class="hide" />
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="license-info-container">
+                    <ul class="license-info-optionals">
+                        <li class="license-infoTitle"><span>Bản dùng thử đặc biệt</span></li>
+                        <li class="license-info-subTitle">
+                            <span>Hết hạn sau 3 ngày</span>
+                            <a class="upgrade" href="#">Nâng cấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="dashboard-wrapper setupRules-wrapper">
+                    <div class="columnMain-container">
+                        <div class="dashboard-content">
+                            <div class="content-left">
+                                <div class="acc-info">
+                                    <img src="images/icon3.png" alt="">
+                                    <span class="acc-devices">DucMinhWindows</span>
+                                    <span class="acc-status">Offline</span>
+                                </div>
+                                <ul class="acc-activities">
+                                    <li class="active__color">
+                                        <a href="dashboard.html">
+                                            <img src="images/dashboard.png" alt=""> Bảng tóm tắt
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="timeline.html">
+                                            <img src="images/Timeline.png" alt=""> Dòng thời gian hoạt động
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <div class="title">
+                                            <img src="images/config.png" alt=""> Thiết lập quy tắc
+                                            <button class="btn dropdown-toggle" data-toggle="collapse" type="button" data-target="#activesDropdown" aria-expanded="false" aria-controls="activesDropdown"><i class="fas fa-chevron-down"></i></button>
+                                        </div>
+                                        <div id="activesDropdown" class="collapse">
+                                            <ul>
+                                                <li>
+                                                    <a href="timeLimit.html">
+                                                        <img src="images/clock.png" alt=""> Giới hạn thời gian hàng ngày
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="restrictTime.html">
+                                                        <img src="images/restrictTime.png" alt=""> Hạn chế thời gian
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="webFilter.html">
+                                                        <img src="images/language.png" alt=""> Lọc Web
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="youtuube_monitor.html">
+                                                        <img src="images/youtube.png" alt=""> Giám sát Youtube
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="game__App.html">
+                                                        <img src="images/Games.png" alt=""> Trò chơi & ứng dụng
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/callSMS.png" alt=""> Cuộc gọi & Tin nhắn
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/location.png" alt=""> Giám sát vị trí
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-right">
+                                <div class="row col-12 icon-icon">
+                                    <div class="arrow-dashboard col-9">
+                                        <a href="dashboard.html">
+                                            <img src="./images/Arrow-left.png" alt="">
+                                        </a>
+                                        <div class="Time-title">
+                                            Thiết lập quy tắc
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="setupRules-content">
+                                    <ul class="setupRules-list">
+                                        <li>
+                                            <a href="timeLimit.html">
+                                                <img src="images/clock.png" alt=""> Giới hạn thời gian hàng ngày
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="restrictTime.html">
+                                                <img src="images/restrictTime.png" alt=""> Hạn chế thời gian
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="webFilter.html">
+                                                <img src="images/language.png" alt=""> Lọc Web
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/youtube.png" alt=""> Giám sát Youtube
+                                            </a>
+                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/Games.png" alt=""> Trò chơi & ứng dụng
+                                            </a>
+                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/callSMS.png" alt=""> Cuộc gọi & Tin nhắn
+                                            </a>
+                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <img src="images/location.png" alt=""> Giám sát vị trí
+                                            </a>
+                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="icon-sys">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#settingPopup">
+                                        <img src="images/Setting.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="settingPopup" tabindex="-1" role="dialog" aria-labelledby="settingPopupLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="setting-list">
+                        <li>
+                            <a href="#">
+                                <span class="title">Thêm thiết bị</span>
+                                <span class="icon"><img src="images/phone.png" alt=""></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="setupRules.html">
+                                <span class="title">Thiết lập quy tắc</span>
+                                <span class="icon"><img src="images/cog.png" alt=""></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <img src="images/close-popup.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="SaveStyle">
+        <div class="savecolor">
+        </div>
+        <div class="position">
+        </div>
+        <div class="setting"></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+    <script src="js/jquery.keyframes.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/effect.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tài khoản của tôi</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/all.min.js"></script>
+</head>
+
+<body class="add-child-template">
+    <header>
+        <div class="headerContent">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12 col-12 logo">
+                    <a href="#"><img src="images/logo2.jpg" alt="" class="logoimg"></a>
+                </div>
+                <div class="col-lg-7 col-10 page-title justify-item-center">
+                    <div class="navbars-wrapper">
+                        <a href="#navbars" class="navbars" data-bs-toggle="offcanvas" role="button" aria-controls="navbars">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h1>Tài khoản của tôi</h1>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-2 accountInfo dropdown">
+                    <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                    <h4 class="accountName">LiemNguyen <i class="fas fa-chevron-down bt-arrow" style="color: #2aabcb; font-size: 14px;"></i></h4>
+                    <!-- <button class="rightClick btn dropdown-toggle" id="accountDroppdown"> -->
+                    <!-- </button> -->
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="accountDroppdown" aria-labelledby="accountDroppdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/help.png" alt="Trung tâm hỗ trợ">Trung tâm hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/logOut.png" alt="Đăng xuất">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="left-sidebar" tabindex="-1" id="navbars" aria-labelledby="navbarsLable">
+                <div class="navigation-menu">
+                    <div class="scrollable-content">
+                        <ul class="menu-list">
+                            <li title="My family" class="menu-item" role="navigation">
+                                <a class="menu-anchor menu-anchor-active" href="#/">
+                                    <img src="images/my-family.png" alt="" class="show" />
+                                    <img src="images/MyFamily2.png" alt="" class="hide" />
+                                    <span>Hoạt động<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Danh sách thiết bị" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/devices.png" alt="" class="show" />
+                                    <img src="images/Devices2.png" alt="" class="hide" />
+                                    <span>Thiết bị<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Vị trí của con" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/my-location.png" alt="" class="show" />
+                                    <img src="images/MyLocation2.png" alt="" class="hide" />
+                                    <span>Vị trí <br>của con</span>
+                                </a>
+                            </li>
+                            <li title="Tài khoản" class="menu-item" role="navigation" class>
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/account.png" alt="" class="show" />
+                                    <img src="images/Account2.png" alt="" class="hide" />
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="license-info-container">
+                    <ul class="license-info-optionals">
+                        <li class="license-infoTitle"><span>Bản dùng thử đặc biệt</span></li>
+                        <li class="license-info-subTitle">
+                            <span>Hết hạn sau 3 ngày</span>
+                            <a class="upgrade" href="#">Nâng cấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="full-container">
+                    <div class="columnMain-container">
+                        <div class="account-wrapper">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="account-info">
+                                        <p class="bold big boldleft">Tài khoản Moniket cao cấp dùng thử</p>
+                                        <p class="medium mediumleft">Hỗ trợ bảo vệ lên tới 3 hồ sơ và 3 thiết bị</p>
+                                        <p class="bold red textleft">Hết hạn sau 3 ngày</p>
+                                        <button type="button" class="btn btn-primary btn-upgrade">Nâng cấp ngay</button>
+                                        <form action="" class="account-form">
+                                            <div class="form-group">
+                                                <a href="./editName.html" class=" acc-item">
+                                                    <label for="userName">
+                                                    
+													<img width="23" src="images/account1.png" alt=""/>
+                                              
+												 	<div class="acc-item text-label"> LiemNguyen</div>
+                                              
+												</label>
+                                                    <input type="text" class="form-control acc-item" id="userName" readonly>
+                                                </a>
+                                            </div>
+                                            <div class="form-group ">
+                                                <a href="./editEmail.html" class="acc-item">
+                                                    <label for="email">
+                                                   
+													<img width="20" src="images/email.png" alt="">
+                                                
+													<div class="acc-item text-label">test@gmail.com</div>
+												</label>
+                                                    <input type="text" class="form-control acc-item" id="email" readonly>
+                                                </a>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password acc-item">
+
+                                                <img width="22" src="images/eye.png" alt="" class="eyepassword">
+
+                                                <a href="./editPassword.html" class="text-password acc-item">
+													<div class="acc-item text-label">*********</div>
+                                                </a>
+                                                </label>
+                                                <a href="./editPassword.html" class="text-password acc-item">
+                                                    <input type="text" class="form-control acc-item acc-password" id="password" value="LiemNguyen" readonly>
+                                                </a>
+                                            </div>
+                                            <div class="form-group">
+                                                <a href="./editLanguage.html" class="acc-item">
+                                                    <label for="language acc-item">
+                                                 
+													<img width="29" src="images/flag.png" alt="">
+                                               
+													<div class="acc-item text-label">English</div>
+												</label>
+                                                    <input type="text" class="form-control acc-item" id="language" readonly>
+                                                </a>
+                                            </div>
+                                            <div class="form-group ">
+                                                <a href="./editTimeZone.html" class="acc-item">
+                                                    <label for="timezone acc-item">
+                                                 
+													<img width="20" src="images/clock.png" alt="">
+                                                  
+													<div class="acc-item text-label">(GMT + 07:00) Bangkok, Hanoi, Jakarta</div>
+												</label>
+                                                    <input type="text" class="form-control acc-item" id="timezone" readonly>
+                                                </a>
+                                            </div>
+                                            <div class="form-group">
+                                                <a href="./editCountry.html" class="acc-item">
+                                                    <label for="country ">
+                                                  
+                                                        <img width="19" src="images/language.png" alt="">
+                                                 
+                                                        <div class="acc-item text-label">Viet Nam</div>
+                                                    </label>
+                                                    <input type="text" class="form-control acc-item" id="country" readonly>
+                                                </a>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-12">
+                                    <div class="account-notification">
+                                        <p class="bold big message">Thông báo</p>
+                                        <div class="btn-switch">
+                                            <div class="btn-switch-text">
+                                                <p class="bold big">Báo cáo Email hằng ngày</p>
+                                                <p class="medium small">Nhận báo cáo hoạt động hằng ngày bằng email</p>
+                                            </div>
+                                            <div class="btn-switch-button">
+                                                <label class="switch">
+													<input type="checkbox" checked>
+													<span class="slider round"></span>
+												</label>
+                                            </div>
+                                        </div>
+                                        <div class="btn-switch">
+                                            <div class="btn-switch-text">
+                                                <p class="bold big">Báo cáo Email hằng tuần</p>
+                                                <p class="medium small">Nhận báo cáo hoạt động hằng tuần bằng email</p>
+                                            </div>
+                                            <div class="btn-switch-button">
+                                                <label class="switch">
+													<input type="checkbox">
+													<span class="slider round"></span>
+												</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/effect.js"></script>
+</body>
+
+</html>

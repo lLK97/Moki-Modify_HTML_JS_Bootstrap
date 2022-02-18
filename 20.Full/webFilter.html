@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/all.min.js"></script>
+</head>
+
+<body class="add-child-template dashboard-template">
+    <header>
+        <div class="headerContent">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12 col-12 logo">
+                    <a href="#"><img src="images/logo2.jpg" alt="" class="logoimg"></a>
+                </div>
+                <div class="col-lg-7 col-7 page-title justify-item-center">
+                    <div class="navbars-wrapper">
+                        <a href="#navbars" class="navbars" data-bs-toggle="offcanvas" role="button" aria-controls="navbars">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h1>Hoạt động của con</h1>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-5 accountInfo dropdown">
+                    <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                    <h4 class="accountName">LiemNguyen <i class="fas fa-chevron-down bt-arrow" style="color: #2aabcb; font-size: 14px;"></i></h4>
+                    <!-- <button class="rightClick btn dropdown-toggle" id="accountDroppdown"> -->
+                    <!-- </button> -->
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="accountDroppdown" aria-labelledby="accountDroppdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/help.png" alt="Trung tâm hỗ trợ">Trung tâm hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/logOut.png" alt="Đăng xuất">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="left-sidebar" tabindex="-1" id="navbars" aria-labelledby="navbarsLable">
+                <div class="navigation-menu">
+                    <div class="scrollable-content">
+                        <ul class="menu-list">
+                            <li title="My family" class="menu-item" role="navigation">
+                                <a class="menu-anchor menu-anchor-active" href="#/">
+                                    <img src="images/my-family.png" alt="" class="show" />
+                                    <img src="images/MyFamily2.png" alt="" class="hide" />
+                                    <span>Hoạt động<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Danh sách thiết bị" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/devices.png" alt="" class="show" />
+                                    <img src="images/Devices2.png" alt="" class="hide" />
+                                    <span>Thiết bị<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Vị trí của con" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/my-location.png" alt="" class="show" />
+                                    <img src="images/MyLocation2.png" alt="" class="hide" />
+                                    <span>Vị trí <br>của con</span>
+                                </a>
+                            </li>
+                            <li title="Tài khoản" class="menu-item" role="navigation" class>
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/account.png" alt="" class="show" />
+                                    <img src="images/Account2.png" alt="" class="hide" />
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="license-info-container">
+                    <ul class="license-info-optionals">
+                        <li class="license-infoTitle"><span>Bản dùng thử đặc biệt</span></li>
+                        <li class="license-info-subTitle">
+                            <span>Hết hạn sau 3 ngày</span>
+                            <a class="upgrade" href="#">Nâng cấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="dashboard-wrapper timeLimit-wrapper overflow">
+                    <div class="columnMain-container row mx-auto">
+                        <div class="dashboard-content col-12 row mx-auto p-0">
+                            <div class="content-left col-xl-3 p-0">
+                                <div class="acc-info">
+                                    <img src="images/icon3.png" alt="">
+                                    <span class="acc-devices">DucMinhWindows</span>
+                                    <span class="acc-status">Offline</span>
+                                </div>
+                                <ul class="acc-activities">
+                                    <li>
+                                        <a href="dashboard.html">
+                                            <img src="images/dashboard.png" alt=""> Bảng tóm tắt
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="timeline.html">
+                                            <img src="images/Timeline.png" alt=""> Dòng thời gian hoạt động
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <div class="title">
+                                            <img src="images/config.png" alt=""> Thiết lập quy tắc
+                                            <button class="btn dropdown-toggle" data-toggle="collapse" type="button" data-target="#activesDropdown" aria-expanded="false" aria-controls="activesDropdown"><i class="fas fa-chevron-down"></i></button>
+                                        </div>
+                                        <div id="activesDropdown" class="collapse show">
+                                            <ul>
+                                                <li>
+                                                    <a href="timeLimit.html">
+                                                        <img src="images/clock.png" alt=""> Giới hạn thời gian hàng ngày
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="restrictTime.html">
+                                                        <img src="images/restrictTime.png" alt=""> Hạn chế thời gian
+                                                    </a>
+                                                </li>
+                                                <li class="active__color">
+                                                    <a href="webFilter.html">
+                                                        <img src="images/language.png" alt=""> Lọc Web
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="youtuube_monitor.html">
+                                                        <img src="images/youtube.png" alt=""> Giám sát Youtube
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="game__App.html">
+                                                        <img src="images/Games.png" alt=""> Trò chơi & ứng dụng
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="call_sms.html">
+                                                        <img src="images/callSMS.png" alt=""> Cuộc gọi & Tin nhắn
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="location.html">
+                                                        <img src="images/location.png" alt=""> Giám sát vị trí
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-right content-right--webFilter p-0 col-12 col-xl-9">
+                                <div class="row col-12 icon-icon">
+                                    <div class="arrow-dashboard col-9">
+                                        <a href="">
+                                            <img src="./images/Arrow-left.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="setting-dashboard setting-dashboard--webfilter col-3">
+                                        <img src="./images/icon-Setting.png" alt="" class="m-auto">
+                                    </div>
+                                </div>
+
+                                <div class="content-TimeLimit content-TimeLimit--webFilter">
+                                    <div class="row">
+                                        <div class="Time-title">
+                                            Bộ lọc web
+                                        </div>
+                                        <div class="Filter-limit Filter-limit--webfilter col-sm-12 col-lg-12 col-xl-9">
+                                            <div class="row Tab">
+                                                <div class="col-12 row m-auto">
+                                                    <div class="col-6 Tab-item Tab-cate Tab-active">
+                                                        Phân loại
+                                                    </div>
+                                                    <div class="col-6 Tab-item Tab-web">
+                                                        Websites
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="Categories">
+                                                <div class="row Apply-filter">
+                                                    <div class="text-filter col-8">
+                                                        Áp dụng bộ lọc
+                                                    </div>
+                                                    <div class="btn-switch-button col-4 col-sm-4 col-xl-4 co-lg-4 btn btn-Webfilter Enabled">
+                                                        <label class="switch">
+                                                        <input type="checkbox" checked="">
+                                                        <span class="slider round btn-Web"></span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="description">
+                                                    <div class="text-filter">
+                                                        Lựa chọn 1 phân loại web bên dưới để thiết lập quy tắc lọc
+                                                        <a data-bs-toggle="modal" data-bs-target="#filterCategories"><img src="./images/help.png" alt=""></a>
+                                                    </div>
+                                                    <img src="" alt="">
+                                                </div>
+
+                                                <div class="Board-Status row">
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Accept.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Cho phép</span>
+                                                    </div>
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Alert.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Cảnh báo cho tôi</span>
+                                                    </div>
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Block.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Chặn</span>
+                                                    </div>
+                                                </div>
+                                                <div class="Board-Status--SelectAll Board-Status--UpdateAddWeb Board-Status--UpdateAddWeb--inside row">
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Accept.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Cho phép</span>
+                                                    </div>
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Alert.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Cảnh báo cho tôi</span>
+                                                    </div>
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Block.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Chặn</span>
+                                                    </div>
+                                                    <div class="col-12 item m-0 row">
+
+                                                        <span class="text-filter col-9">Khôi phục giá trị mặc định</span>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="Board-Status--UpdateAddWeb row">
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Accept.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Cho phép</span>
+                                                    </div>
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Alert.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Cảnh báo cho tôi</span>
+                                                    </div>
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Icon_Block.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Chặn</span>
+                                                    </div>
+                                                    <div class="col-12 item m-0 row">
+                                                        <div class="col-2 img">
+                                                            <img src='./images/Delete.png' alt="">
+                                                        </div>
+                                                        <span class="text-filter col-9">Xóa</span>
+                                                    </div>
+
+                                                </div> -->
+
+
+
+                                            </div>
+                                            <div class="AddWeb">
+                                                <div class="description">
+                                                    <div class="text-Web">
+                                                        Thiết lập quy tắc lọc cho những trang web cụ thể. Những quy tắc này ghi đè các quy tắc phân loại
+                                                        <a data-bs-toggle="modal" data-bs-target="#filterWeb"><img src="./images/help.png" alt=""></a>
+                                                    </div>
+                                                    <img src="" alt="">
+                                                </div>
+                                                <div class="col-12 Item-WebNone">
+                                                    Chưa có trang web nào được thêm vào
+
+                                                </div>
+                                            </div>
+
+                                            <!-- <div class="button button-webfilter  button-webfilter--inside">
+                                                Chọn tất cả
+                                            </div> -->
+                                            <div class="space-white">
+
+                                            </div>
+                                        </div>
+
+                                        <!-- //////////////////////Add Web -->
+
+                                        <div class="AddWeb-title col-12">
+                                            <img src="./images/Arrow-left.png" alt="" class='back-filter' /> Thêm một Website
+                                        </div>
+                                        <div class="AddWeb-content AddWeb-content--webFilter col-sm-12 col-lg-12 col-xl-9">
+                                            <div class="title">
+                                                Nhập URL:
+                                            </div>
+                                            <div class="col-12 row textAddWeb">
+                                                <input type="url" placeholder="Ví dụ: Google.com.vn" class="col-12 text-AddWeb">
+                                                <div class='label-noti'>Trống</div>
+                                            </div>
+                                            <div class="Board-Status--AddWeb row">
+                                                <div class="col-12 item m-0 row">
+                                                    <div class="col-1 img">
+                                                        <img src='./images/Icon_Accept.png' alt="">
+                                                    </div>
+                                                    <span class="text-filter col-9">Cho phép</span>
+                                                    <div class="cricle col-2 row">
+                                                        <input type="radio" name="AddWeb" id="" class="col-2 check" data-status='Allow' checked />
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 item m-0 row">
+                                                    <div class="col-1 img">
+                                                        <img src='./images/Icon_Alert.png' alt="">
+                                                    </div>
+                                                    <span class="text-filter col-9">Cảnh báo cho tôi</span>
+                                                    <div class="cricle col-2 row">
+                                                        <input type="radio" name="AddWeb" id="" class="col-2" data-status='Alert' />
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 item m-0 row">
+                                                    <div class="col-1 img">
+                                                        <img src='./images/Icon_Block.png' alt="">
+                                                    </div>
+                                                    <span class="text-filter col-9">Chặn</span>
+                                                    <div class="cricle col-2 row">
+                                                        <input type="radio" name="AddWeb" id="" class="col-2" data-status='Block' />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bt-AddWeb">
+                                                Thêm Website
+                                            </div>
+                                        </div>
+                                        <div class="Time-box">
+                                            <!-- <div class="Time-box-arrow row col-12">
+                                                <img src="./images/Arrow-left.png" alt="" class="col-4">
+                                                <h5 class="col-8">Cài đặt bộ lọc web</h5>
+                                            </div> -->
+                                            <div class="Time-setting col-12">
+                                                <div class="setting-title">
+                                                    Cài đặt
+                                                </div>
+                                                <!-- <div class="setting-title des">
+                                                    Khi hết thời gian sẽ:
+                                                </div> -->
+                                                <div class="setting-title-child row">
+                                                    <div class="title col-10">
+                                                        Chặn các trình duyệt không được hỗ trợ
+                                                    </div>
+                                                    <div class="btn-switch-button col-2 btn">
+                                                        <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text col-10">
+                                                    Loại bỏ nguy cơ con bạn truy cập nội dung không an toàn trên các trình duyệt không được hỗ trợ
+                                                </div>
+                                                <div class="setting-title-child row">
+                                                    <div class="title col-10">
+                                                        Chặn các trang web không xác định
+                                                    </div>
+                                                    <div class="btn-switch-button col-2 btn">
+                                                        <label class="switch">
+                                                        <input type="checkbox">
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text col-10">
+                                                    Loại bỏ nguy cơ con bạn truy cập các trang web chưa được phân loại
+                                                </div>
+                                                <div class="setting-title-child row">
+                                                    <div class="title col-10">
+                                                        Thực thi tìm kiếm an toàn
+                                                    </div>
+                                                    <div class="btn-switch-button col-2 btn">
+                                                        <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                    </div>
+                                                </div>
+                                                <div class="text col-10">
+                                                    Xóa những nội dung có thể gây hại cho con bạn khỏi kết quả tìm kiếm trên web
+                                                </div>
+                                            </div>
+
+                                            <div class="Time-noti col-12">
+                                                <div class="noti-title setting-title-child">
+                                                    Thông báo
+                                                </div>
+                                                <div class="noti-title row">
+                                                    <div class="title setting-title-child col-10">
+                                                        Thông báo về trang web bị chặn
+                                                    </div>
+                                                    <div class="btn-switch-button col-2 btn">
+                                                        <label class="switch">
+                                                        <input type="checkbox" checked>
+                                                        <span class="slider round"></span>
+                                                    </label>
+                                                    </div>
+
+                                                </div>
+                                                <div class="text col-10">
+                                                    Gửi thông báo Email khi con bạn cố gắng truy cập vào một trang web bị chặn
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="icon-sys">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#settingPopup">
+                                        <img src="images/Setting.png" alt="">
+                                    </a>
+                                </div>
+
+
+                                <div class="button button-webfilter button-webfilter--outside">
+                                    Chọn tất cả
+                                </div>
+                            </div>
+                            <div class="Board-Status--UpdateAddWeb Board-Status--UpdateAddWeb--outside row">
+                                <div class="col-12 item m-0 row">
+                                    <div class="col-2 img">
+                                        <img src='./images/Icon_Accept.png' alt="">
+                                    </div>
+                                    <span class="text-filter col-9">Cho phép</span>
+                                </div>
+                                <div class="col-12 item m-0 row">
+                                    <div class="col-2 img">
+                                        <img src='./images/Icon_Alert.png' alt="">
+                                    </div>
+                                    <span class="text-filter col-9">Cảnh báo cho tôi</span>
+                                </div>
+                                <div class="col-12 item m-0 row">
+                                    <div class="col-2 img">
+                                        <img src='./images/Icon_Block.png' alt="">
+                                    </div>
+                                    <span class="text-filter col-9">Chặn</span>
+                                </div>
+                                <div class="col-12 item m-0 row">
+                                    <div class="col-2 img">
+                                        <img src='./images/Delete.png' alt="">
+                                    </div>
+                                    <span class="text-filter col-9">Xóa</span>
+                                </div>
+
+                            </div>
+                            <div class="Board-Status--SelectAll Board-Status--SelectAll--outside row">
+                                <div class="col-12 item m-0 row">
+                                    <div class="col-2 img">
+                                        <img src='./images/Icon_Accept.png' alt="">
+                                    </div>
+                                    <span class="text-filter col-9">Cho phép</span>
+                                </div>
+                                <div class="col-12 item m-0 row">
+                                    <div class="col-2 img">
+                                        <img src='./images/Icon_Alert.png' alt="">
+                                    </div>
+                                    <span class="text-filter col-9">Cảnh báo cho tôi</span>
+                                </div>
+                                <div class="col-12 item m-0 row">
+                                    <div class="col-2 img">
+                                        <img src='./images/Icon_Block.png' alt="">
+                                    </div>
+                                    <span class="text-filter col-9">Chặn</span>
+                                </div>
+                                <div class="col-12 item m-0 row">
+
+                                    <span class="text-filter col-9">Khôi phục giá trị mặc định</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal -->
+
+    <div class="modal fade" id="settingPopup" tabindex="-1" role="dialog" aria-labelledby="settingPopupLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="setting-list">
+                        <li>
+                            <a href="#">
+                                <span class="title">Thêm thiết bị</span>
+                                <span class="icon"><img src="images/phone.png" alt=""></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="setupRules.html">
+                                <span class="title">Thiết lập quy tắc</span>
+                                <span class="icon"><img src="images/cog.png" alt=""></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <img src="images/close-popup.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade board-modal" id="filterWeb" tabindex="-1" aria-labelledby="filterWebLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/Close.png" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>Quy tắc lọc trang web</h4>
+                    <ul>
+                        <li>
+                            <img src="images/Icon_Accept.png" alt="">
+                            <span>Cho phép: luôn cho phép truy cập trang web đó</span>
+                        </li>
+                        <li>
+                            <img src="images/Icon_Alert.png" alt="">
+                            <span>Cho phép truy cập nhưng gửi cảnh báo tới cha mẹ</span>
+                        </li>
+                        <li>
+                            <img src="images/Icon_Block.png" alt="">
+                            <span>Chặn: luôn chặn trang web đó</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade board-modal" id="filterCategories" tabindex="-1" aria-labelledby="filterCategoriesLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/Close.png" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4>Quy tắc lọc danh mục</h4>
+                    <ul>
+                        <li>
+                            <img src="images/Icon_Accept.png" alt="">
+                            <span>Cho phép truy cập tất cả các trang web thuộc danh mục đó</span>
+                        </li>
+                        <li>
+                            <img src="images/Icon_Alert.png" alt="">
+                            <span>Cho phép truy cập nhưng gửi cảnh báo tới cha mẹ</span>
+                        </li>
+                        <li>
+                            <img src="images/Icon_Block.png" alt="">
+                            <span>Chặn tất cả các trang web thuộc danh mục đó</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/effect.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+</body>
+
+</html>

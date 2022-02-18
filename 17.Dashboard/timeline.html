@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/all.min.js"></script>
+</head>
+
+<body class="add-child-template dashboard-template">
+    <header>
+        <div class="headerContent">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12 col-12 logo">
+                    <a href="#"><img src="images/logo2.jpg" alt="" class="logoimg"></a>
+                </div>
+                <div class="col-lg-7 col-7 page-title justify-item-center">
+                    <div class="navbars-wrapper">
+                        <a href="#navbars" class="navbars" data-bs-toggle="offcanvas" role="button" aria-controls="navbars">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h1>Hoạt động của con</h1>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-5 accountInfo dropdown">
+                    <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                    <h4 class="accountName">LiemNguyen <i class="fas fa-chevron-down bt-arrow" style="color: #2aabcb; font-size: 14px;"></i></h4>
+                    <!-- <button class="rightClick btn dropdown-toggle" id="accountDroppdown"> -->
+                    <!-- </button> -->
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="accountDroppdown" aria-labelledby="accountDroppdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/help.png" alt="Trung tâm hỗ trợ">Trung tâm hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/logOut.png" alt="Đăng xuất">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="left-sidebar" tabindex="-1" id="navbars" aria-labelledby="navbarsLable">
+                <div class="navigation-menu">
+                    <div class="scrollable-content">
+                        <ul class="menu-list">
+                            <li title="My family" class="menu-item" role="navigation">
+                                <a class="menu-anchor menu-anchor-active" href="#/">
+                                    <img src="images/my-family.png" alt="" class="show" />
+                                    <img src="images/MyFamily2.png" alt="" class="hide" />
+                                    <span>Hoạt động<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Danh sách thiết bị" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/devices.png" alt="" class="show" />
+                                    <img src="images/Devices2.png" alt="" class="hide" />
+                                    <span>Thiết bị<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Vị trí của con" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/my-location.png" alt="" class="show" />
+                                    <img src="images/MyLocation2.png" alt="" class="hide" />
+                                    <span>Vị trí <br>của con</span>
+                                </a>
+                            </li>
+                            <li title="Tài khoản" class="menu-item" role="navigation" class>
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/account.png" alt="" class="show" />
+                                    <img src="images/Account2.png" alt="" class="hide" />
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="license-info-container">
+                    <ul class="license-info-optionals">
+                        <li class="license-infoTitle"><span>Bản dùng thử đặc biệt</span></li>
+                        <li class="license-info-subTitle">
+                            <span>Hết hạn sau 3 ngày</span>
+                            <a class="upgrade" href="#">Nâng cấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="dashboard-wrapper dashboard-child-wrapper">
+                    <div class="columnMain-container">
+                        <div class="dashboard-content">
+                            <div class="content-left">
+                                <div class="acc-info">
+                                    <img src="images/icon3.png" alt="">
+                                    <span class="acc-devices">DucMinhWindows</span>
+                                    <span class="acc-status">Offline</span>
+                                </div>
+                                <ul class="acc-activities">
+                                    <li>
+                                        <a href="dashboard.html">
+                                            <img src="images/dashboard.png" alt=""> Bảng tóm tắt
+                                        </a>
+                                    </li>
+                                    <li class="active__color">
+                                        <a href="timeline.html">
+                                            <img src="images/Timeline.png" alt=""> Dòng thời gian hoạt động
+                                        </a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <div class="title">
+                                            <img src="images/config.png" alt=""> Thiết lập quy tắc
+                                            <button class="btn dropdown-toggle" data-toggle="collapse" type="button" data-target="#activesDropdown" aria-expanded="false" aria-controls="activesDropdown"><i class="fas fa-chevron-down"></i></button>
+                                        </div>
+                                        <div id="activesDropdown" class="collapse">
+                                            <ul>
+                                                <li>
+                                                    <a href="timeLimit.html">
+                                                        <img src="images/clock.png" alt=""> Giới hạn thời gian hàng ngày
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="restrictTime.html">
+                                                        <img src="images/restrictTime.png" alt=""> Hạn chế thời gian
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="webFilter.html">
+                                                        <img src="images/language.png" alt=""> Lọc Web
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="youtuube_monitor.html">
+                                                        <img src="images/youtube.png" alt=""> Giám sát Youtube
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="game__App.html">
+                                                        <img src="images/Games.png" alt=""> Trò chơi & ứng dụng
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/callSMS.png" alt=""> Cuộc gọi & Tin nhắn
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <img src="images/location.png" alt=""> Giám sát vị trí
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="content-right">
+                                <div class="board-info-mobile">
+                                    <div class="info-mobile-left">
+                                        <a href="dashboard.html" class="backToPrevious">
+                                            <i class="fas fa-arrow-left"></i></a>
+                                        <img src="images/icon3.png" alt="">
+                                        <div class="board-device-info">
+                                            <span class="device-name">MobileSoft3</span>
+                                            <span class="status">Active</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-mobile-right">
+                                        <a href="#" class="edit"><i class="fas fa-pen"></i></a>
+                                    </div>
+                                </div>
+                                <div class="board-item">
+                                    <h2>Dòng thời gian hoạt động</h2>
+                                    <div class="board-item-content">
+                                        <div class="filter genderField">
+                                            <img src="images/Filter.png" alt="">
+                                            <div class="chosen-wrapper" data-js="custom-scroll">
+                                                <select class="form-select makeMeList" id="gender" aria-label="Giới tính">
+                                                    <option value="allActivities" selected>Tất cả các hoạt động</option>
+                                                    <option value="webActivities">Hoạt động web</option>
+                                                    <option value="appActivities">Hoạt động ứng dụng</option>
+                                                    <option value="search">Tìm kiếm</option>
+                                                    <option value="callAndMessage">Cuộc gọi và SMS</option>
+                                                    <option value="location">Địa điểm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="filter-content active" id="allActivities">
+                                            <div class="located">
+                                                <ul class="board-item-list">
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/map_on.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">12:08 sáng</span>
+                                                            <p class="address">7 Lê Văn Lương, Nhân chính, Thanh Xuân, Hà Nội, Việt Nam</p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="located-reload">
+                                                            <i class="fas fa-sync-alt"></i>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="app-used-today">
+                                                <span class="big-title">Hôm nay</span>
+                                                <ul class="board-item-list">
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/spotify-icon.jpg" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">12:10 sáng</span>
+                                                            <p class="address">VinID</p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown1">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Alert.png" alt="">Cảnh báo cho tôi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="timeline-detail.html">
+                                                                        <i class="fas fa-arrow-circle-right"></i>Xem chi tiết
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/spotify-icon.jpg" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">12:09 sáng</span>
+                                                            <p class="address">Spotify</p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown2">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Alert.png" alt="">Cảnh báo cho tôi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="timeline-detail.html">
+                                                                        <i class="fas fa-arrow-circle-right"></i>Xem chi tiết
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="filter-content active" id="webActivities">
+                                            <div class="app-used-today">
+                                                <span class="big-title">Hôm nay</span>
+                                                <ul class="board-item-list">
+                                                    <li class="app-blocked">
+                                                        <div class="thumnail">
+                                                            <img src="images/Block.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">12:53 - Trang web bị chặn</span>
+                                                            <p class="address">Dantri.com.vn</p>
+                                                            <p class="note"><i>2 lần thử trên SamsungAndroidM20 - </i>
+                                                                <a href="timeline-detail.html">Xem chi tiết</a>
+                                                            </p>
+                                                            <span class="tag high-class">Tin tức</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown3" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown3">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Alert.png" alt="">Cảnh báo cho tôi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="timeline-detail.html">
+                                                                        <i class="fas fa-arrow-circle-right"></i>Xem chi tiết
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="warning">
+                                                        <div class="thumnail">
+                                                            <img src="images/Alert.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">12:53 - Cảnh cáo duyệt web</span>
+                                                            <p class="address">Vnexpress.net</p>
+                                                            <p class="note"><i>2 trang được truy cập trên SamsungAndroidM20 - </i>
+                                                                <a href="timeline-detail.html">Xem chi tiết</a>
+                                                            </p>
+                                                            <span class="tag high-class">Tin tức</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown4" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown4">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Alert.png" alt="">Cảnh báo cho tôi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#">
+                                                                        <i class="fas fa-arrow-circle-right"></i>Xem chi tiết
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/Normal.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">12:51</span>
+                                                            <p class="address">Google.com</p>
+                                                            <span class="tag high-class">Cổng tìm kiếm</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time">3 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown5" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown5">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Alert.png" alt="">Cảnh báo cho tôi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="timeline-detail.html">
+                                                                        <i class="fas fa-arrow-circle-right"></i>Xem chi tiết
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="warning">
+                                                        <div class="thumnail">
+                                                            <img src="images/Alert.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">12:26 - Cảnh cáo duyệt web</span>
+                                                            <p class="address">Vnexpress.net</p>
+                                                            <p class="note"><i>4 trang đã truy cập trên SamsungAndroidM20 - </i>
+                                                                <a href="timeline-detail.html">Xem chi tiết</a>
+                                                            </p>
+                                                            <span class="tag high-class">Tin tức</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time">3 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown6" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown6">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Alert.png" alt="">Cảnh báo cho tôi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="timeline-detail.html">
+                                                                        <i class="fas fa-arrow-circle-right"></i>Xem chi tiết
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="app-used-today">
+                                                <span class="big-title">Thứ 7 ngày 4 tháng 12</span>
+                                                <ul class="board-item-list">
+                                                    <li class="warning">
+                                                        <div class="thumnail">
+                                                            <img src="images/Alert.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">10:43 PM - Cảnh cáo duyệt web</span>
+                                                            <p class="address">Roblox.com</p>
+                                                            <p class="note"><i>4 trang đã truy cập trên SamsungAndroidM20 - </i>
+                                                                <a href="timeline-detail.html">Xem chi tiết</a>
+                                                            </p>
+                                                            <span class="tag high-class">Trò chơi</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown7" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown7">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Alert.png" alt="">Cảnh báo cho tôi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="timeline-detail.html">
+                                                                        <i class="fas fa-arrow-circle-right"></i>Xem chi tiết
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="app-youtube">
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-youtube.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">08:55 chiều</span>
+                                                            <p class="address">Lịch sử Youtube</p>
+                                                            <p class="note"><i>1 lần truy cập trên SamsungAndroidM20 - </i>
+                                                                <a href="youtube-detail.html">Xem chi tiết</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="youtubeDropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="youtubeDropdown1">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="youtube-detail.html">
+                                                                        <i class="fas fa-arrow-circle-right"></i>Xem chi tiết
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#">
+                                                                        <i class="fas fa-cog"></i>Quản lý
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="app-youtube">
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-youtube.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">08:56 chiều</span>
+                                                            <p class="address">Lịch sử Youtube</p>
+                                                            <p class="note"><i>3 lần truy cập trên SamsungAndroidM20 - </i>
+                                                                <a href="youtube-detail.html">Xem chi tiết</a>
+                                                            </p>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="youtubeDropdown2" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="youtubeDropdown2">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="youtube-detail.html">
+                                                                        <i class="fas fa-arrow-circle-right"></i>Xem chi tiết
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#">
+                                                                        <i class="fas fa-cog"></i>Quản lý
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="warning">
+                                                        <div class="thumnail">
+                                                            <img src="images/Alert.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">08:31 PM - Cảnh cáo duyệt web</span>
+                                                            <p class="address">Roblox.com</p>
+                                                            <p class="note"><i>4 trang đã truy cập trên SamsungAndroidM20 - </i>
+                                                                <a href="timeline-detail.html">Xem chi tiết</a>
+                                                            </p>
+                                                            <span class="tag high-class">Trò chơi</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown8" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown8">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Alert.png" alt="">Cảnh báo cho tôi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="timeline-detail.html">
+                                                                        <i class="fas fa-arrow-circle-right"></i>Xem chi tiết
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="filter-content" id="appActivities">
+                                            <div class="app-used-today">
+                                                <span class="big-title">Hôm nay</span>
+                                                <ul class="board-item-list">
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-chorme.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">19:00</span>
+                                                            <p class="address">Trình duyệt Chrome</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time">24 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown9" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown9">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-ClockType.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">19:00</span>
+                                                            <p class="address">ClockType</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown10" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown10">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-chorme.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">06:37 chiều</span>
+                                                            <p class="address">Trình duyệt Chrome</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time">3 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown11" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdow11">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="app-used-today">
+                                                <span class="big-title">Chủ nhật ngày 5 tháng 12</span>
+                                                <ul class="board-item-list">
+                                                    <li class="app-youtube">
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-youtube.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">11:45 chiều</span>
+                                                            <p class="address">Youtube: Xem, nghe, phát trực tiếp</p>
+                                                            <p class="note"><i>trên BillkenIphone</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time">3 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="youtubeDropdown3" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="youtubeDropdown3">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-gmail.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">12:42 chiều</span>
+                                                            <p class="address">Gmail - Email của Google</p>
+                                                            <p class="note"><i>trên BillkenIphone</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown12" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown12">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-facebook.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">11:40 chiều</span>
+                                                            <p class="address">Facebook</p>
+                                                            <p class="note"><i>trên BillkenIphone</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time">3 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown13" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown13">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-chorme.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">19:00</span>
+                                                            <p class="address">Trình duyệt Chrome</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time">24 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown14" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown14">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Cho phép
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Chặn
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="filter-content active" id="search">
+                                            <div class="app-used-today">
+                                                <span class="big-title">Hôm nay</span>
+                                                <p class="noActivity">Không có hoạt động hôm nay</p>
+                                            </div>
+                                            <div class="app-used-today">
+                                                <span class="big-title">Chủ nhật ngày 5 tháng 12</span>
+                                                <ul class="board-item-list">
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/Search.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">05:15 chiều</span>
+                                                            <p class="address">Tìm kiếm trên Google</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <p class="search-quote">
+                                                                <i>"Làm thế nào để ngăn chặn kẻ bắt nạt"</i>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/Search.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">05:15 chiều</span>
+                                                            <p class="address">Tìm kiếm trên Google</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <p class="search-quote">
+                                                                <i>"Làm thế nào để ngăn chặn kẻ bắt nạt"</i>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-youtube.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">08:50 sáng</span>
+                                                            <p class="address">Tìm kiếm trên Youtube</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <p class="search-quote">
+                                                                <i>"Làm thế nào để ngăn chặn kẻ bắt nạt"</i>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/logo-youtube.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">08:32 sáng</span>
+                                                            <p class="address">Tìm kiếm trên Youtube</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <p class="search-quote">
+                                                                <i>"Làm thế nào để ngăn chặn kẻ bắt nạt"</i>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/Search.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">12:54 chiều</span>
+                                                            <p class="address">Tìm kiếm trên Google</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <p class="search-quote">
+                                                                <i>"Bộ phim cuối cùng của Star Wars?"</i>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/Search.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">12:54 chiều</span>
+                                                            <p class="address">Tìm kiếm trên Google</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <p class="search-quote">
+                                                                <i>"Bộ phim cuối cùng của Star Wars?"</i>
+                                                            </p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="filter-content active" id="location">
+                                            <div class="located">
+                                                <ul class="board-item-list">
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/map_on.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">3:05 sáng</span>
+                                                            <p class="address">257 Khuất Duy Tiến, Nhân Chính, Thanh Xuân, Hà Nội, Việt Nam</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="located-reload">
+                                                            <i class="fas fa-sync-alt"></i>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="app-used-today">
+                                                <span class="big-title">Hôm nay</span>
+                                                <ul class="board-item-list">
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/map_on.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">3:05 sáng</span>
+                                                            <p class="address">257 Khuất Duy Tiến, Nhân Chính, Thanh Xuân, Hà Nội, Việt Nam</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/map_on.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">2:53 sáng</span>
+                                                            <p class="address">257 Khuất Duy Tiến, Nhân Chính, Thanh Xuân, Hà Nội, Việt Nam</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="app-used-today">
+                                                <span class="big-title">Thứ Hai ngày 6 tháng 12</span>
+                                                <p class="noActivity">Không có hoạt động hôm nay</p>
+                                            </div>
+                                            <div class="app-used-today">
+                                                <span class="big-title">Chủ Nhật ngày 5 tháng 12</span>
+                                                <ul class="board-item-list">
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/map_on.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">11:36 chiều</span>
+                                                            <p class="address">66 đường Lê Văn Lương, Quận Thanh Xuân, Hà Nội, Việt Nam</p>
+                                                            <p class="note"><i>trên BillKeniPhone</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/map_on.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">7:39 chiều</span>
+                                                            <p class="address">69 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội, Việt Nam</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/map_on.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">7:26 chiều</span>
+                                                            <p class="address">69 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội, Việt Nam</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="map-off">
+                                                        <div class="thumnail">
+                                                            <img src="images/map_on.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">7:23 chiều</span>
+                                                            <p class="address">Dịch vụ định vị đang TẮT</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li class="map-off">
+                                                        <div class="thumnail">
+                                                            <img src="images/map_on.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">7:23 chiều</span>
+                                                            <p class="address">Dịch vụ định vị đang TẮT</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/map_on.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">7:39 chiều</span>
+                                                            <p class="address">69 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội, Việt Nam</p>
+                                                            <p class="note"><i>trên SamsungAndroidM20</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="filter-content active" id="callAndMessage">
+                                            <div class="app-used-today">
+                                                <span class="big-title">Hôm nay</span>
+                                                <ul class="board-item-list">
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/Outbox_SMS.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">10:19 chiều</span>
+                                                            <p class="address">Tin nhắn đi</p>
+                                                            <p class="note"><b>Bố Liêm </b><i>(+94967666208)</i></p>
+                                                            <p class="sms">Xin chào Bố. Con cũng thế nhá. Kaka</p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown15" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown15">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Luôn cho phép cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Luôn chặn cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/Inbox_SMS.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">10:18 chiều</span>
+                                                            <p class="address">Tin nhắn đến</p>
+                                                            <p class="note"><b>Bố Liêm </b><i>(+94967666208)</i></p>
+                                                            <p class="sms">Xin chào Bill. Bố yêu con.</p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown16" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdown16">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Luôn cho phép cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Luôn chặn cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/OK_InCall.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">10:18 chiều</span>
+                                                            <p class="address">Cuộc gọi đến</p>
+                                                            <p class="note"><b>Bố Liêm </b><i>(+94967666208)</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown17" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdow17">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Luôn cho phép cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Luôn chặn cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/OK_OutCall.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">10:18 chiều</span>
+                                                            <p class="address">Cuộc gọi đi</p>
+                                                            <p class="note"><b>Bố Liêm </b><i>(+94967666208)</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown18" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdow18">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Luôn cho phép cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Luôn chặn cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="app-blocked">
+                                                        <div class="thumnail">
+                                                            <img src="images/Block_OutCall.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">10:15 PM - Cuộc gọi bị chặn</span>
+                                                            <p class="address">Cuộc gọi đi</p>
+                                                            <p class="note"><b>Bố Liêm </b><i>(+94967666208)</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown19" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdow19">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Luôn cho phép cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Luôn chặn cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="thumnail">
+                                                            <img src="images/MissCall.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">10:15 chiều</span>
+                                                            <p class="address">Cuộc gọi nhỡ</p>
+                                                            <p class="note"><b>Bố Liêm </b><i>(+94967666208)</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown20" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdow20">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Luôn cho phép cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Luôn chặn cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="app-blocked">
+                                                        <div class="thumnail">
+                                                            <img src="images/Block_InCall.png" alt="">
+                                                        </div>
+                                                        <div class="located-info">
+                                                            <span class="time">10:15 PM - Cuộc gọi bị chặn</span>
+                                                            <p class="address">Cuộc gọi đến</p>
+                                                            <p class="note"><b>Bố Liêm </b><i>(+94967666208)</i></p>
+                                                            <span class="tag high-class">Tính năng cao cấp</span>
+                                                        </div>
+                                                        <div class="time-used">
+                                                            <span class="time"><i class="fas fa-chevron-left"></i>1 phút</span>
+                                                            <a href="#" class="btn more-info dropdown-toggle" role="button" id="appDropdown21" data-bs-toggle="dropdown" aria-expanded="false">
+                                                                <span></span>
+                                                                <span></span>
+                                                                <span></span>
+                                                            </a>
+                                                            <ul class="dropdown-menu" aria-labelledby="appDropdow21">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#successModals">
+                                                                        <img src="images/Icon_Accept.png" alt=""> Luôn cho phép cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="#" data-target="#failModals">
+                                                                        <img src="images/Icon_Block.png" alt="">Luôn chặn cuộc gọi
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="statusModal" id="successModals">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/CheckOK.png" alt="">
+                    <p>Quy tắc dantri.com.vn được cập nhật và thêm vào danh sách ngoại lệ của ...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="statusModal" id="failModals">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times"></i>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/CheckFail.png" alt="">
+                    <p>Đã xảy ra sự cố. <br/>Vui lòng thử lại.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+    <script src="js/jquery.keyframes.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/effect.js"></script>
+    <script src="js/jquery.matchHeight-min.js"></script>
+</body>
+
+</html>

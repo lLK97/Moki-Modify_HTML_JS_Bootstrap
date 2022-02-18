@@ -1,0 +1,53 @@
+.text-center {
+    text-align: center;
+}
+
+.img-start-up {
+    display: block;
+    margin: 35px auto;
+    width: 165px;
+    height: 150px;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    width: 80%;
+    margin: auto;
+    line-height: 1.4;
+}
+
+.formButton {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.formButton .btn-primary {
+    font-weight: bold;
+    width: 120px;
+    border: none;
+    height: 40px;
+    transition: all ease 0.8s;
+    outline: none;
+    box-shadow: none;
+}
+
+.formButton .btn-primary:disabled {
+    opacity: 0.6;
+}
+
+.formButton .btn-primary span {
+    padding-left: 8px;
+}
+
+.btn-hover {
+    transition: all 0.5s ease;
+}
+
+.formButton .btn-hover {
+    border: none;
+    background: linear-gradient(to left, #2aabcb 50%, #59b3ca 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}

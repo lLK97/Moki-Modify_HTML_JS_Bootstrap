@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Mokinet</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#444444">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="all" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="./css/common.css">
+    <script src="./js/languages.js"></script>
+</head>
+
+<body>
+    <div class="mkn_full-page-height language-en is-desktop">
+        <div class="mkn">
+            <img class="mkn_logo--small-screen mg-auto" src="./images/Mokinetlogo.png" alt="Mokinet">
+            <img class="mkn_logo--bigger-screen" src="./images/Mokinetlogo.png" alt="Mokinet">
+
+            <form method="post" class="js-login-form" data-error-generic="Đã có lỗi xảy ra!" novalidate="novalidate">
+                <h1 class="mkn_title multi" data-key="text_welcomeback">Chào mừng trở lại!</h1>
+
+                <div class="rck-alert-box rck-alert-box--error js-form-errors" style="display:none">
+                    <div class="rck-alert-box__icon"><i class="far fa-exclamation-circle fa-lg"></i></div>
+                    <div class="rck-alert-box__text js-form-errors-msgs rck-alert-box__text--bold"></div>
+                </div>
+
+                <div class="rck-text-field rck-text-field--block rck-text-field--login">
+                    <label class="rck-text-field__label">Email</label>
+                    <div class="rck-text-field__grouped">
+                        <input class="rck-text-field__input form-email" maxlength="60" type="email" name="form_email"
+                            id="form_email" required="" aria-required="true">
+                    </div>
+                    <div class="rck-info-field-label"></div>
+                </div>
+
+                <div class="rck-text-field rck-text-field--block rck-text-field--login">
+                    <label class="rck-text-field__label multi" data-key="text_pass">Mật khẩu</label>
+                    <div class="rck-text-field__grouped">
+                        <input class="rck-text-field__input form-password" type="password" name="form_password"
+                            id="form_password" required="" aria-required="true">
+                    </div>
+                    <div class="rck-info-field-label"></div>
+                </div>
+
+                <p class="mkn_text">
+                    <a class="mkn_link multi" data-key="text_forgot" target="_blank" href="#">Quên mật khẩu?</a>
+                </p>
+
+                <button type="submit" class="rck-btn rck-btn--centered mkn_m-auto js-form-button">
+                    <span class="rck-btn__label multi" data-key="button_login">
+                        Đăng nhập </span>
+                </button>
+
+                <p class="mkn_text mkn_text--center mkn_redirect-section ">
+                    <span class="multi" data-key="text_firstuse">Lần đầu sử dụng? </span>
+                    <a class="mkn_link multi" data-key="button_signup" href="#">Đăng ký</a>
+                </p>
+            </form>
+        </div>
+
+</body>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script>
+    LoadLanguage("vi");
+</script>
+
+</html>

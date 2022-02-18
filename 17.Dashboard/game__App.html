@@ -1,0 +1,1766 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/game__app.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/all.min.js"></script>
+</head>
+
+<body class="add-child-template">
+    <header>
+        <div class="headerContent">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12 col-12 logo">
+                    <a href="#"><img src="images/logo2.jpg" alt="" class="logoimg"></a>
+
+                </div>
+                <div class="col-lg-7 col-10 page-title justify-item-center">
+                    <div class="navbars-wrapper">
+                        <a href="#navbars" class="navbars" data-bs-toggle="offcanvas" role="button" aria-controls="navbars">
+                            <i class="fas fa-bars"></i>
+
+                        </a>
+
+                        <h1>Hoạt động của con</h1>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-2 accountInfo dropdown">
+                    <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                        
+                    <h4 class="accountName">LiemNguyen <i class="fas fa-chevron-down bt-arrow" style="color: #2aabcb; font-size: 14px;"></i></h4>
+                    <!-- <button class="rightClick btn dropdown-toggle" id="accountDroppdown"> -->
+                    <!-- </button> -->
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="accountDroppdown" aria-labelledby="accountDroppdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/help.png" alt="Trung tâm hỗ trợ">Trung tâm hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/logOut.png" alt="Đăng xuất">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="left-sidebar" tabindex="-1" id="navbars" aria-labelledby="navbarsLable">
+                <div class="navigation-menu">
+                    <div class="scrollable-content">
+                        <ul class="menu-list">
+                            <li title="My family" class="menu-item" role="navigation">
+                                <a class="menu-anchor menu-anchor-active" href="#/">
+                                    <img src="images/my-family.png" alt="" class="show" />
+                                    <img src="images/MyFamily2.png" alt="" class="hide" />
+                                    <span>Hoạt động<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Danh sách thiết bị" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/devices.png" alt="" class="show" />
+                                    <img src="images/Devices2.png" alt="" class="hide" />
+                                    <span>Thiết bị<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Vị trí của con" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/my-location.png" alt="" class="show" />
+                                    <img src="images/MyLocation2.png" alt="" class="hide" />
+                                    <span>Vị trí <br>của con</span>
+                                </a>
+                            </li>
+                            <li title="Tài khoản" class="menu-item" role="navigation" class>
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/account.png" alt="" class="show" />
+                                    <img src="images/Account2.png" alt="" class="hide" />
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="license-info-container">
+                    <ul class="license-info-optionals">
+                        <li class="license-infoTitle"><span>Bản dùng thử đặc biệt</span></li>
+                        <li class="license-info-subTitle">
+                            <span>Hết hạn sau 3 ngày</span>
+                            <a class="upgrade" href="#">Nâng cấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="row col-12 icon-icon">
+                    <div class="arrow-dashboard col-6">
+                        <img src="./images/Arrow.png" alt="" class="m-auto">
+                    </div>
+                    <div class="setting-dashboard col-6">
+                        <img src="./images/setting.png" alt="" class="m-auto">
+                    </div>
+                </div>
+                <div class="dashboard-wrapper">
+                    <div class="columnMain-container row col-12">
+
+                        <div class="dashboard-content col-10 col-sm-8 col-xl-3 p-0 m-0">
+                            <div class="acc-info">
+                                <img src="images/icon3.png" alt="">
+                                <span class="acc-devices">DucMinhWindows</span>
+                                <span class="acc-status">Offline</span>
+                            </div>
+                            <ul class="acc-activities">
+                                <li>
+                                    <img src="images/dashboard.png" alt=""> Bảng tóm tắt
+                                </li>
+                                <li>
+                                    <img src="images/Timeline.png" alt=""> Dòng thời gian hoạt động
+                                </li>
+                                <li class="dropdown">
+                                    <div class="title">
+                                        <img src="images/config.png" alt=""> Thiết lập quy tắc
+                                        <button class="btn dropdown-toggle" data-toggle="collapse" type="button" data-target="#activesDropdown" aria-expanded="false" aria-controls="activesDropdown"><i class="fas fa-chevron-down"></i></button>
+                                    </div>
+                                    <div id="activesDropdown" class="collapse">
+                                        <ul>
+                                            <li>
+                                                <a href="timeLimit.html">
+                                                    <img src="images/clock.png" alt=""> Giới hạn thời gian hàng ngày
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="restrictTime.html">
+                                                    <img src="images/restrictTime.png" alt=""> Hạn chế thời gian
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="webFilter.html">
+                                                    <img src="images/language.png" alt=""> Lọc Web
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="youtuube_monitor.html">
+                                                    <img src="images/youtube.png" alt=""> Giám sát Youtube
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="game__App.html">
+                                                    <img src="images/Games.png" alt=""> Trò chơi & ứng dụng
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/callSMS.png" alt=""> Cuộc gọi & Tin nhắn
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img src="images/location.png" alt=""> Giám sát vị trí
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                        </div>
+
+                        <!-- Time Limit -->
+                        <div class="content-TimeLimit col-12 col-sm-7 col-xl-9 row">
+                            <div class="Time-title col-12">
+                                Trò chơi và ứng dụng
+                            </div>
+                            <div class="Time-limit col-lg-12 col-xl-9">
+                                <div class="access-App access-App--restrict row">
+                                    <div class="label col-9">
+                                        Áp dụng các hạn chế
+                                    </div>
+                                    <a class="col-2 row access">
+                                        <div class="btn-switch-button col-12 btn">
+                                            <label class="switch">
+                                        <input type="checkbox" class="ac-App" checked >
+                                        <span class="slider round"></span>
+                                        </label>
+                                        </div>
+                                    </a>
+                                    <div class="title">
+                                        <div class="col-12 description">Đặt giới hạn thời gian hoặc gạt nút sang trái để chặn chúng</div>
+                                    </div>
+                                </div>
+
+
+
+                                <!-- youtube -->
+                                <div class="app youtube">
+                                    <div class="row access-App access-App--youtube">
+
+                                        <div class="active-limit active-limit--youtube col-10 row">
+                                            <div class="logo-youtube logo-youtube--youtube col-2">
+                                                <img src="./images/YoutubeApp.png" alt="">
+                                            </div>
+                                            <div class="text row col-10">
+                                                <div class="label-logo col-12">
+                                                    YouTube: Watch, Listen, Stream
+                                                </div>
+                                                <div class="limit-today limit-today--youtube col-12 row">
+                                                    <div class="text col-9 col-sm-11">Thiết lập giới hạn thời gian</div>
+                                                    <i class="fas fa-chevron-down col-1 p-0 bt-arrow-limit bt-arrow-limit--youtube" style="color: #2aabcb; font-size: 14px;"></i>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn-switch-button btn col-2">
+                                            <label class="switch">
+                                            <input type="checkbox" class="ac-App ac-App--youtube" checked>
+                                            <span class="slider round"></span>
+                                  
+                                    </div>
+                                    </div>
+                             
+                                    <div class="col-12 limit-day limit-day--youtube">
+                                        <div class="col-10 col-sm-9 row">
+                                            <div class="col-1 row day-item day-item--youtube day-active day-active--youtube">
+                                                <div>T2</div>
+                                            </div>
+                                            <div class="col-1 row day-item day-item--youtube">
+                                                <div>T3</div>
+                                            </div>
+                                            <div class="col-1 row day-item day-item--youtube">
+                                                <div>T4</div>
+                                            </div>
+                                            <div class="col-1 row day-item day-item--youtube">
+                                                <div>T5</div>
+                                            </div>
+                                            <div class="col-1 row day-item day-item--youtube">
+                                                <div>T6</div>
+                                            </div>
+                                            <div class="col-1 row day-item day-item--youtube">
+                                                <div>T7</div>
+                                            </div>
+                                            <div class="col-1 row day-item day-item--youtube">
+                                                <div>CN</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-12 limit-cricle limit-cricle--youtube">    
+                                        <div class="col-4 row cricle-bg cricle-bg--youtube">
+    
+                                            <div class="cricle-tick cricle-tick--youtube row">
+    
+                                                <div class="cricle-texttime cricle-texttime--youtube">
+                                                    <div class="title">
+                                                        Giới hạn
+                                                    </div>
+                                                    <div class="digital row">
+                                                        <div class="hours hours--youtube row col-5 m-auto p-0">
+                                                            <div class="number col-12 p-0">
+                                                                24
+                                                            </div>
+                                                            <div class="text col-12 m-auto p-0">
+                                                                Giờ
+                                                            </div>
+                                                        </div>
+                                                        <div class="dot col-2 p-0">
+                                                            :
+                                                        </div>
+                                                        <div class="minute minute--youtube row col-5 m-auto p-0">
+                                                            <div class="number col-12 p-0">
+                                                                00
+                                                            </div>
+                                                            <div class="text col-12 m-auto p-0">
+                                                                Phút
+                                                            </div>
+                                                        </div>
+                                                        <div class="line col-9">
+                                                        </div>
+                                                        <div class="day day--youtube col-9" id="textday--youtube">
+                                                            Thứ hai
+                                                        </div>
+                                                        <div class="line col-6">
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mouse-tick mouse-tick--youtube col-12 m-auto row">
+                                                    <div class="space space--youtube col-3 m-auto">
+    
+                                                    </div>
+                                                    <div class="cricle-mouse-bg cricle-mouse-bg--youtube row col-3 m-auto p-0" id='cricle'>
+                                                        <div class="cricle-mouse cricle-mouse--youtube row col-3 m-auto p-0">
+                                                            <div class="dott col-3">
+    
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="group-tick col-12 m-auto p-0">
+    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cricle-tick--round cricle-tick--round--youtube row p-0 m-0">
+                                                <div class="it it--15 it--15--youtube col-12 row p-0 m-0">
+                                                    <div class="item item--1 item--1--youtube col-6 p-0 m-0">
+    
+                                                    </div>
+                                                    <div class="item item--5 item--5--youtube col-6 p-0 m-0">
+                                                    </div>
+                                                </div>
+                                                <div class="it it--23 it--23--youtube col-12 row p-0 m-0">
+    
+                                                    <div class="item--iso item--3 item--3--youtube right col-6 p-0 m-0">
+    
+                                                    </div>
+                                                    <div class="item item--iso item--2 item--2--youtube left col-6 p-0 m-0">
+    
+                                                    </div>
+                                                </div>
+                                                <div class="it it--46 col-12 row p-0 m-0">
+    
+                                                    <div class="item item--6 item--6--youtube col-6 p-0 m-0">
+    
+                                                    </div>
+                                                    <div class="item item--4 item--4--youtube col-6 p-0 m-0">
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+    
+    
+                                        </div>
+                                    </div>
+                                    <div class="limit-grbt limit-grbt--youtube row">
+                                        <div class="bt bt-clock row col-6">
+                                            <div class="box-clock col-5">
+                                                <div class="icon clock clock--youtube row col-12">
+                                                    <img src="./images/icon_Cai_Lai.png" alt="" class="col-12">
+                                                </div>
+                                                <div class="text text-clock--youtube">
+                                                    Cho Phép
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bt bt-lock row col-6">
+                                            <div class="box-lock col-4">
+                                                <div class="icon lock lock--youtube row col-12">
+                                                    <img src="./images/keyBlock.png" alt="" class="col-12">
+                                                </div>
+                                                <div class="text text-lock--youtube">
+                                                    Chặn
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-xl-10 icon-android">
+                                        <img src="./images/iOS.png" alt=""> 
+                                        <div class="text">
+                                            iOS
+                                        </div>
+                                    </div>
+                                </div>
+                             
+                            <!-- youtube -->
+
+
+
+                            
+                              <!-- facebook -->
+                              <div class="app facebook">
+                                <div class="row access-App access-App--facebook">
+                               
+                                    <div class="active-limit active-limit--facebook col-10 row">
+                                        <div class="logo-facebook logo--facebook col-2">
+                                            <img src="./images/facebook.png" alt="">
+                                        </div>
+                                        <div class="text row col-10">
+                                            <div class="label-logo col-12">
+                                                Facebook
+                                            </div>
+                                            <div class="limit-today limit-today--facebook col-12 row">
+                                                <div class="text col-9 col-sm-11">Thiết lập giới hạn thời gian</div>
+                                                <i class="fas fa-chevron-down col-1 p-0 bt-arrow-limit bt-arrow-limit--facebook" style="color: #2aabcb; font-size: 14px;"></i>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="btn-switch-button btn col-2">
+                                        <label class="switch">
+                                        <input type="checkbox" checked class="ac-App ac-App--facebook">
+                                        <span class="slider round"></span>
+                              
+                                </div>
+                                </div>
+                         
+                                <div class="col-12 limit-day limit-day--facebook">
+                                    <div class="col-10 col-sm-9 row">
+                                        <div class="col-1 row day-item day-item--facebook day-active day-active--facebook">
+                                            <div>T2</div>
+                                        </div>
+                                        <div class="col-1 row day-item day-item--facebook">
+                                            <div>T3</div>
+                                        </div>
+                                        <div class="col-1 row day-item day-item--facebook">
+                                            <div>T4</div>
+                                        </div>
+                                        <div class="col-1 row day-item day-item--facebook">
+                                            <div>T5</div>
+                                        </div>
+                                        <div class="col-1 row day-item day-item--facebook">
+                                            <div>T6</div>
+                                        </div>
+                                        <div class="col-1 row day-item day-item--facebook">
+                                            <div>T7</div>
+                                        </div>
+                                        <div class="col-1 row day-item day-item--facebook">
+                                            <div>CN</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-12 limit-cricle limit-cricle--facebook">    
+                                    <div class="col-4 row cricle-bg cricle-bg--facebook">
+
+                                        <div class="cricle-tick cricle-tick--facebook row">
+
+                                            <div class="cricle-texttime cricle-texttime--facebook">
+                                                <div class="title">
+                                                    Giới hạn
+                                                </div>
+                                                <div class="digital row">
+                                                    <div class="hours hours--facebook row col-5 m-auto p-0">
+                                                        <div class="number col-12 p-0">
+                                                            24
+                                                        </div>
+                                                        <div class="text col-12 m-auto p-0">
+                                                            Giờ
+                                                        </div>
+                                                    </div>
+                                                    <div class="dot col-2 p-0">
+                                                        :
+                                                    </div>
+                                                    <div class="minute minute--facebook row col-5 m-auto p-0">
+                                                        <div class="number col-12 p-0">
+                                                            00
+                                                        </div>
+                                                        <div class="text col-12 m-auto p-0">
+                                                            Phút
+                                                        </div>
+                                                    </div>
+                                                    <div class="line col-9">
+                                                    </div>
+                                                    <div class="day day--facebook col-9" id="textday--facebook">
+                                                        Thứ hai
+                                                    </div>
+                                                    <div class="line col-6">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mouse-tick mouse-tick--facebook col-12 m-auto row">
+                                                <div class="space space--facebook col-3 m-auto">
+
+                                                </div>
+                                                <div class="cricle-mouse-bg cricle-mouse-bg--facebook row col-3 m-auto p-0" id='cricle'>
+                                                    <div class="cricle-mouse cricle-mouse--facebook row col-3 m-auto p-0">
+                                                        <div class="dott col-3">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="group-tick col-12 m-auto p-0">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cricle-tick--round cricle-tick--round--facebook row p-0 m-0">
+                                            <div class="it it--15 it--15--facebook col-12 row p-0 m-0">
+                                                <div class="item item--1 item--1--facebook col-6 p-0 m-0">
+
+                                                </div>
+                                                <div class="item item--5 item--5--facebook col-6 p-0 m-0">
+                                                </div>
+                                            </div>
+                                            <div class="it it--23 it--23--facebook col-12 row p-0 m-0">
+
+                                                <div class="item--iso item--3 item--3--facebook right col-6 p-0 m-0">
+
+                                                </div>
+                                                <div class="item item--iso item--2 item--2--facebook left col-6 p-0 m-0">
+
+                                                </div>
+                                            </div>
+                                            <div class="it it--46 col-12 row p-0 m-0">
+
+                                                <div class="item item--6 item--6--facebook col-6 p-0 m-0">
+
+                                                </div>
+                                                <div class="item item--4 item--4--facebook col-6 p-0 m-0">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="limit-grbt limit-grbt--facebook row">
+                                    <div class="bt bt-clock row col-6">
+                                        <div class="box-clock col-5">
+                                            <div class="icon clock clock--facebook row col-12">
+                                                <img src="./images/icon_Cai_Lai.png" alt="" class="col-12">
+                                            </div>
+                                            <div class="text text-clock--facebook">
+                                                Cho Phép
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bt bt-lock row col-6">
+                                        <div class="box-lock col-4">
+                                            <div class="icon lock lock--facebook row col-12">
+                                                <img src="./images/keyBlock.png" alt="" class="col-12">
+                                            </div>
+                                            <div class="text text-lock--facebook">
+                                                Chặn
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-9 col-xl-10 icon-android">
+                                    <img src="./images/iOS.png" alt=""> 
+                                    <div class="text">
+                                        iOS
+                                    </div>
+                                </div>
+                            </div>
+                         
+                       <!-- facebook -->
+
+
+                        <!-- messenger -->
+                        <div class="app messenger">
+                            <div class="row access-App access-App--messenger">
+                           
+                                <div class="active-limit active-limit--messenger col-10 row">
+                                    <div class="logo-facebook logo--messenger col-2">
+                                        <img src="./images/messenger.png" alt="">
+                                    </div>
+                                    <div class="text row col-10">
+                                        <div class="label-logo col-12">
+                                            Messenger
+                                        </div>
+                                        <div class="limit-today limit-today--messenger col-12 row">
+                                            <div class="text col-9 col-sm-11">Thiết lập giới hạn thời gian</div>
+                                            <i class="fas fa-chevron-down col-1 p-0 bt-arrow-limit bt-arrow-limit--messenger" style="color: #2aabcb; font-size: 14px;"></i>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="btn-switch-button btn col-2">
+                                    <label class="switch">
+                                    <input type="checkbox" class="ac-App ac-App--messenger" checked>
+                                    <span class="slider round"></span>
+                          
+                            </div>
+                            </div>
+                     
+                            <div class="col-12 limit-day limit-day--messenger">
+                                <div class="col-10 col-sm-9 row">
+                                    <div class="col-1 row day-item day-item--messenger day-active day-active--messenger">
+                                        <div>T2</div>
+                                    </div>
+                                    <div class="col-1 row day-item day-item--messenger">
+                                        <div>T3</div>
+                                    </div>
+                                    <div class="col-1 row day-item day-item--messenger">
+                                        <div>T4</div>
+                                    </div>
+                                    <div class="col-1 row day-item day-item--messenger">
+                                        <div>T5</div>
+                                    </div>
+                                    <div class="col-1 row day-item day-item--messenger">
+                                        <div>T6</div>
+                                    </div>
+                                    <div class="col-1 row day-item day-item--messenger">
+                                        <div>T7</div>
+                                    </div>
+                                    <div class="col-1 row day-item day-item--messenger">
+                                        <div>CN</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-12 limit-cricle limit-cricle--messenger">    
+                                <div class="col-4 row cricle-bg cricle-bg--messenger">
+
+                                    <div class="cricle-tick cricle-tick--messenger row">
+
+                                        <div class="cricle-texttime cricle-texttime--messenger">
+                                            <div class="title">
+                                                Giới hạn
+                                            </div>
+                                            <div class="digital row">
+                                                <div class="hours hours--messenger row col-5 m-auto p-0">
+                                                    <div class="number col-12 p-0">
+                                                        24
+                                                    </div>
+                                                    <div class="text col-12 m-auto p-0">
+                                                        Giờ
+                                                    </div>
+                                                </div>
+                                                <div class="dot col-2 p-0">
+                                                    :
+                                                </div>
+                                                <div class="minute minute--messenger row col-5 m-auto p-0">
+                                                    <div class="number col-12 p-0">
+                                                        00
+                                                    </div>
+                                                    <div class="text col-12 m-auto p-0">
+                                                        Phút
+                                                    </div>
+                                                </div>
+                                                <div class="line col-9">
+                                                </div>
+                                                <div class="day day--messenger col-9" id="textday--messenger">
+                                                    Thứ hai
+                                                </div>
+                                                <div class="line col-6">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mouse-tick mouse-tick--messenger col-12 m-auto row">
+                                            <div class="space space--messenger col-3 m-auto">
+
+                                            </div>
+                                            <div class="cricle-mouse-bg cricle-mouse-bg--messenger row col-3 m-auto p-0" id='cricle'>
+                                                <div class="cricle-mouse cricle-mouse--messenger row col-3 m-auto p-0">
+                                                    <div class="dott col-3">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="group-tick col-12 m-auto p-0">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cricle-tick--round cricle-tick--round--messenger row p-0 m-0">
+                                        <div class="it it--15 it--15--messenger col-12 row p-0 m-0">
+                                            <div class="item item--1 item--1--messenger col-6 p-0 m-0">
+
+                                            </div>
+                                            <div class="item item--5 item--5--messenger col-6 p-0 m-0">
+                                            </div>
+                                        </div>
+                                        <div class="it it--23 it--23--messenger col-12 row p-0 m-0">
+
+                                            <div class="item--iso item--3 item--3--messenger right col-6 p-0 m-0">
+
+                                            </div>
+                                            <div class="item item--iso item--2 item--2--messenger left col-6 p-0 m-0">
+
+                                            </div>
+                                        </div>
+                                        <div class="it it--46 col-12 row p-0 m-0">
+
+                                            <div class="item item--6 item--6--messenger col-6 p-0 m-0">
+
+                                            </div>
+                                            <div class="item item--4 item--4--messenger col-6 p-0 m-0">
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <div class="limit-grbt limit-grbt--messenger row">
+                                <div class="bt bt-clock row col-6">
+                                    <div class="box-clock col-5">
+                                        <div class="icon clock clock--messenger row col-12">
+                                            <img src="./images/icon_Cai_Lai.png" alt="" class="col-12">
+                                        </div>
+                                        <div class="text text-clock--messenger">
+                                            Cho Phép
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bt bt-lock row col-6">
+                                    <div class="box-lock col-4">
+                                        <div class="icon lock lock--messenger row col-12">
+                                            <img src="./images/keyBlock.png" alt="" class="col-12">
+                                        </div>
+                                        <div class="text text-lock--messenger">
+                                            Chặn
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-9 col-xl-10 icon-android">
+                                <img src="./images/Android.png" alt=""> 
+                                <div class="text">
+                                    Android
+                                </div>
+                            </div>
+                        </div>
+                     
+                 <!-- messenger -->
+
+
+                <!-- zalo -->
+                  <div class="app zalo">
+                    <div class="row access-App access-App--zalo">
+                   
+                        <div class="active-limit active-limit--zalo col-10 row">
+                            <div class="logo-facebook logo--zalo col-2">
+                                <img src="./images/zalo.jpg" alt="">
+                            </div>
+                            <div class="text row col-10">
+                                <div class="label-logo col-12">
+                                    Zalo
+                                </div>
+                                <div class="limit-today limit-today--zalo col-12 row">
+                                    <div class="text col-9 col-sm-11">Thiết lập giới hạn thời gian</div>
+                                    <i class="fas fa-chevron-down col-1 p-0 bt-arrow-limit bt-arrow-limit--zalo" style="color: #2aabcb; font-size: 14px;"></i>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="btn-switch-button btn col-2">
+                            <label class="switch">
+                            <input type="checkbox" checked class="ac-App ac-App--zalo">
+                            <span class="slider round"></span>
+                  
+                    </div>
+                    </div>
+             
+                    <div class="col-12 limit-day limit-day--zalo">
+                        <div class="col-10 col-sm-9 row">
+                            <div class="col-1 row day-item day-item--zalo day-active day-active--zalo">
+                                <div>T2</div>
+                            </div>
+                            <div class="col-1 row day-item day-item--zalo">
+                                <div>T3</div>
+                            </div>
+                            <div class="col-1 row day-item day-item--zalo">
+                                <div>T4</div>
+                            </div>
+                            <div class="col-1 row day-item day-item--zalo">
+                                <div>T5</div>
+                            </div>
+                            <div class="col-1 row day-item day-item--zalo">
+                                <div>T6</div>
+                            </div>
+                            <div class="col-1 row day-item day-item--zalo">
+                                <div>T7</div>
+                            </div>
+                            <div class="col-1 row day-item day-item--zalo">
+                                <div>CN</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-12 limit-cricle limit-cricle--zalo">    
+                        <div class="col-4 row cricle-bg cricle-bg--zalo">
+
+                            <div class="cricle-tick cricle-tick--zalo row">
+
+                                <div class="cricle-texttime cricle-texttime--zalo">
+                                    <div class="title">
+                                        Giới hạn
+                                    </div>
+                                    <div class="digital row">
+                                        <div class="hours hours--zalo row col-5 m-auto p-0">
+                                            <div class="number col-12 p-0">
+                                                24
+                                            </div>
+                                            <div class="text col-12 m-auto p-0">
+                                                Giờ
+                                            </div>
+                                        </div>
+                                        <div class="dot col-2 p-0">
+                                            :
+                                        </div>
+                                        <div class="minute minute--zalo row col-5 m-auto p-0">
+                                            <div class="number col-12 p-0">
+                                                00
+                                            </div>
+                                            <div class="text col-12 m-auto p-0">
+                                                Phút
+                                            </div>
+                                        </div>
+                                        <div class="line col-9">
+                                        </div>
+                                        <div class="day day--zalo col-9" id="textday--zalo">
+                                            Thứ hai
+                                        </div>
+                                        <div class="line col-6">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mouse-tick mouse-tick--zalo col-12 m-auto row">
+                                    <div class="space space--zalo col-3 m-auto">
+
+                                    </div>
+                                    <div class="cricle-mouse-bg cricle-mouse-bg--zalo row col-3 m-auto p-0" id='cricle'>
+                                        <div class="cricle-mouse cricle-mouse--zalo row col-3 m-auto p-0">
+                                            <div class="dott col-3">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="group-tick col-12 m-auto p-0">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cricle-tick--round cricle-tick--round--zalo row p-0 m-0">
+                                <div class="it it--15 it--15--zalo col-12 row p-0 m-0">
+                                    <div class="item item--1 item--1--zalo col-6 p-0 m-0">
+
+                                    </div>
+                                    <div class="item item--5 item--5--zalo col-6 p-0 m-0">
+                                    </div>
+                                </div>
+                                <div class="it it--23 it--23--zalo col-12 row p-0 m-0">
+
+                                    <div class="item--iso item--3 item--3--zalo right col-6 p-0 m-0">
+
+                                    </div>
+                                    <div class="item item--iso item--2 item--2--zalo left col-6 p-0 m-0">
+
+                                    </div>
+                                </div>
+                                <div class="it it--46 col-12 row p-0 m-0">
+
+                                    <div class="item item--6 item--6--zalo col-6 p-0 m-0">
+
+                                    </div>
+                                    <div class="item item--4 item--4--zalo col-6 p-0 m-0">
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="limit-grbt limit-grbt--zalo row">
+                        <div class="bt bt-clock row col-6">
+                            <div class="box-clock col-5">
+                                <div class="icon clock clock--zalo row col-12">
+                                    <img src="./images/icon_Cai_Lai.png" alt="" class="col-12">
+                                </div>
+                                <div class="text text-clock--zalo">
+                                    Cho Phép
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bt bt-lock row col-6">
+                            <div class="box-lock col-4">
+                                <div class="icon lock lock--zalo row col-12">
+                                    <img src="./images/keyBlock.png" alt="" class="col-12">
+                                </div>
+                                <div class="text text-lock--zalo">
+                                    Chặn
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9 col-xl-10 icon-android">
+                        <img src="./images/Android.png" alt=""> 
+                        <div class="text">
+                            Android
+                        </div>
+                    </div>
+                </div>
+             
+         <!-- zalo -->
+  <!-- VinID -->
+  <div class="app VinID">
+    <div class="row access-App access-App--vinID">
+   
+        <div class="active-limit active-limit--vinID col-10 row">
+            <div class="logo-facebook logo--vinID col-2">
+                <img src="./images/vinID.png" alt="">
+            </div>
+            <div class="text row col-10">
+                <div class="label-logo col-12">
+                    VinID
+                </div>
+                <div class="limit-today limit-today--vinID col-12 row">
+                    <div class="text col-9 col-sm-11">Thiết lập giới hạn thời gian</div>
+                    <i class="fas fa-chevron-down col-1 p-0 bt-arrow-limit bt-arrow-limit--vinID" style="color: #2aabcb; font-size: 14px;"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-switch-button btn col-2">
+            <label class="switch">
+            <input type="checkbox" checked class="ac-App ac-App--vinID">
+            <span class="slider round"></span>
+  
+    </div>
+    </div>
+
+    <div class="col-12 limit-day limit-day--vinID">
+        <div class="col-10 col-sm-9 row">
+            <div class="col-1 row day-item day-item--vinID day-active day-active--vinID">
+                <div>T2</div>
+            </div>
+            <div class="col-1 row day-item day-item--vinID">
+                <div>T3</div>
+            </div>
+            <div class="col-1 row day-item day-item--vinID">
+                <div>T4</div>
+            </div>
+            <div class="col-1 row day-item day-item--vinID">
+                <div>T5</div>
+            </div>
+            <div class="col-1 row day-item day-item--vinID">
+                <div>T6</div>
+            </div>
+            <div class="col-1 row day-item day-item--vinID">
+                <div>T7</div>
+            </div>
+            <div class="col-1 row day-item day-item--vinID">
+                <div>CN</div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-12 limit-cricle limit-cricle--vinID">    
+        <div class="col-4 row cricle-bg cricle-bg--vinID">
+
+            <div class="cricle-tick cricle-tick--vinID row">
+
+                <div class="cricle-texttime cricle-texttime--vinID">
+                    <div class="title">
+                        Giới hạn
+                    </div>
+                    <div class="digital row">
+                        <div class="hours hours--vinID row col-5 m-auto p-0">
+                            <div class="number col-12 p-0">
+                                24
+                            </div>
+                            <div class="text col-12 m-auto p-0">
+                                Giờ
+                            </div>
+                        </div>
+                        <div class="dot col-2 p-0">
+                            :
+                        </div>
+                        <div class="minute minute--vinID row col-5 m-auto p-0">
+                            <div class="number col-12 p-0">
+                                00
+                            </div>
+                            <div class="text col-12 m-auto p-0">
+                                Phút
+                            </div>
+                        </div>
+                        <div class="line col-9">
+                        </div>
+                        <div class="day day--vinID col-9" id="textday--vinID">
+                            Thứ hai
+                        </div>
+                        <div class="line col-6">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mouse-tick mouse-tick--vinID col-12 m-auto row">
+                    <div class="space space--vinID col-3 m-auto">
+
+                    </div>
+                    <div class="cricle-mouse-bg cricle-mouse-bg--vinID row col-3 m-auto p-0" id='cricle'>
+                        <div class="cricle-mouse cricle-mouse--vinID row col-3 m-auto p-0">
+                            <div class="dott col-3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-tick col-12 m-auto p-0">
+
+                    </div>
+                </div>
+            </div>
+            <div class="cricle-tick--round cricle-tick--round--vinID row p-0 m-0">
+                <div class="it it--15 it--15--vinID col-12 row p-0 m-0">
+                    <div class="item item--1 item--1--vinID col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--5 item--5--vinID col-6 p-0 m-0">
+                    </div>
+                </div>
+                <div class="it it--23 it--23--vinID col-12 row p-0 m-0">
+
+                    <div class="item--iso item--3 item--3--vinID right col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--iso item--2 item--2--vinID left col-6 p-0 m-0">
+
+                    </div>
+                </div>
+                <div class="it it--46 col-12 row p-0 m-0">
+
+                    <div class="item item--6 item--6--vinID col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--4 item--4--vinID col-6 p-0 m-0">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="limit-grbt limit-grbt--vinID row">
+        <div class="bt bt-clock row col-6">
+            <div class="box-clock col-5">
+                <div class="icon clock clock--vinID row col-12">
+                    <img src="./images/icon_Cai_Lai.png" alt="" class="col-12">
+                </div>
+                <div class="text text-clock--vinID">
+                    Cho Phép
+                </div>
+            </div>
+        </div>
+        <div class="bt bt-lock row col-6">
+            <div class="box-lock col-4">
+                <div class="icon lock lock--vinID row col-12">
+                    <img src="./images/keyBlock.png" alt="" class="col-12">
+                </div>
+                <div class="text text-lock--vinID">
+                    Chặn
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-9 col-xl-10 icon-android">
+        <img src="./images/Windows.png" alt=""> 
+        <div class="text">
+            Window
+        </div>
+    </div>
+</div>
+  <!-- VinID -->
+ <!-- be -->
+ <div class="app be">
+    <div class="row access-App access-App--be">
+   
+        <div class="active-limit active-limit--be col-10 row">
+            <div class="logo-facebook logo--be col-2">
+                <img src="./images/zalo.jpg" alt="">
+            </div>
+            <div class="text row col-10">
+                <div class="label-logo col-12">
+                    Zalo
+                </div>
+                <div class="limit-today limit-today--be col-12 row">
+                    <div class="text col-9 col-sm-11">Thiết lập giới hạn thời gian</div>
+                    <i class="fas fa-chevron-down col-1 p-0 bt-arrow-limit bt-arrow-limit--be" style="color: #2aabcb; font-size: 14px;"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-switch-button btn col-2">
+            <label class="switch">
+            <input type="checkbox" checked class="ac-App ac-App--be">
+            <span class="slider round"></span>
+  
+    </div>
+    </div>
+
+    <div class="col-12 limit-day limit-day--be">
+        <div class="col-10 col-sm-9 row">
+            <div class="col-1 row day-item day-item--be day-active day-active--be">
+                <div>T2</div>
+            </div>
+            <div class="col-1 row day-item day-item--be">
+                <div>T3</div>
+            </div>
+            <div class="col-1 row day-item day-item--be">
+                <div>T4</div>
+            </div>
+            <div class="col-1 row day-item day-item--be">
+                <div>T5</div>
+            </div>
+            <div class="col-1 row day-item day-item--be">
+                <div>T6</div>
+            </div>
+            <div class="col-1 row day-item day-item--be">
+                <div>T7</div>
+            </div>
+            <div class="col-1 row day-item day-item--be">
+                <div>CN</div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-12 limit-cricle limit-cricle--be">    
+        <div class="col-4 row cricle-bg cricle-bg--be">
+
+            <div class="cricle-tick cricle-tick--be row">
+
+                <div class="cricle-texttime cricle-texttime--be">
+                    <div class="title">
+                        Giới hạn
+                    </div>
+                    <div class="digital row">
+                        <div class="hours hours--be row col-5 m-auto p-0">
+                            <div class="number col-12 p-0">
+                                24
+                            </div>
+                            <div class="text col-12 m-auto p-0">
+                                Giờ
+                            </div>
+                        </div>
+                        <div class="dot col-2 p-0">
+                            :
+                        </div>
+                        <div class="minute minute--be row col-5 m-auto p-0">
+                            <div class="number col-12 p-0">
+                                00
+                            </div>
+                            <div class="text col-12 m-auto p-0">
+                                Phút
+                            </div>
+                        </div>
+                        <div class="line col-9">
+                        </div>
+                        <div class="day day--be col-9" id="textday--be">
+                            Thứ hai
+                        </div>
+                        <div class="line col-6">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mouse-tick mouse-tick--be col-12 m-auto row">
+                    <div class="space space--be col-3 m-auto">
+
+                    </div>
+                    <div class="cricle-mouse-bg cricle-mouse-bg--be row col-3 m-auto p-0" id='cricle'>
+                        <div class="cricle-mouse cricle-mouse--be row col-3 m-auto p-0">
+                            <div class="dott col-3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-tick col-12 m-auto p-0">
+
+                    </div>
+                </div>
+            </div>
+            <div class="cricle-tick--round cricle-tick--round--be row p-0 m-0">
+                <div class="it it--15 it--15--be col-12 row p-0 m-0">
+                    <div class="item item--1 item--1--be col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--5 item--5--be col-6 p-0 m-0">
+                    </div>
+                </div>
+                <div class="it it--23 it--23--be col-12 row p-0 m-0">
+
+                    <div class="item--iso item--3 item--3--be right col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--iso item--2 item--2--be left col-6 p-0 m-0">
+
+                    </div>
+                </div>
+                <div class="it it--46 col-12 row p-0 m-0">
+
+                    <div class="item item--6 item--6--be col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--4 item--4--be col-6 p-0 m-0">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="limit-grbt limit-grbt--be row">
+        <div class="bt bt-clock row col-6">
+            <div class="box-clock col-5">
+                <div class="icon clock clock--be row col-12">
+                    <img src="./images/icon_Cai_Lai.png" alt="" class="col-12">
+                </div>
+                <div class="text text-clock--be">
+                    Cho Phép
+                </div>
+            </div>
+        </div>
+        <div class="bt bt-lock row col-6">
+            <div class="box-lock col-4">
+                <div class="icon lock lock--be row col-12">
+                    <img src="./images/keyBlock.png" alt="" class="col-12">
+                </div>
+                <div class="text text-lock--be">
+                    Chặn
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-9 col-xl-10 icon-android">
+        <img src="./images/Windows.png" alt=""> 
+        <div class="text">
+            Window
+        </div>
+    </div>
+</div>
+ <!-- be -->
+ <!-- phone -->
+ <div class="app phone">
+    <div class="row access-App access-App--phone">
+   
+        <div class="active-limit active-limit--phone col-10 row">
+            <div class="logo-facebook logo--phone col-2">
+                <img src="./images/phone.png" alt="">
+            </div>
+            <div class="text row col-10">
+                <div class="label-logo col-12">
+                    Phone
+                </div>
+                <div class="limit-today limit-today--phone col-12 row">
+                    <div class="text col-9 col-sm-11">Thiết lập giới hạn thời gian</div>
+                    <i class="fas fa-chevron-down col-1 p-0 bt-arrow-limit bt-arrow-limit--phone" style="color: #2aabcb; font-size: 14px;"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-switch-button btn col-2">
+            <label class="switch">
+            <input type="checkbox" checked class="ac-App ac-App--phone">
+            <span class="slider round"></span>
+  
+    </div>
+    </div>
+
+    <div class="col-12 limit-day limit-day--phone">
+        <div class="col-10 col-sm-9 row">
+            <div class="col-1 row day-item day-item--phone day-active day-active--phone">
+                <div>T2</div>
+            </div>
+            <div class="col-1 row day-item day-item--phone">
+                <div>T3</div>
+            </div>
+            <div class="col-1 row day-item day-item--phone">
+                <div>T4</div>
+            </div>
+            <div class="col-1 row day-item day-item--phone">
+                <div>T5</div>
+            </div>
+            <div class="col-1 row day-item day-item--phone">
+                <div>T6</div>
+            </div>
+            <div class="col-1 row day-item day-item--phone">
+                <div>T7</div>
+            </div>
+            <div class="col-1 row day-item day-item--phone">
+                <div>CN</div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-12 limit-cricle limit-cricle--phone">    
+        <div class="col-4 row cricle-bg cricle-bg--phone">
+
+            <div class="cricle-tick cricle-tick--phone row">
+
+                <div class="cricle-texttime cricle-texttime--phone">
+                    <div class="title">
+                        Giới hạn
+                    </div>
+                    <div class="digital row">
+                        <div class="hours hours--phone row col-5 m-auto p-0">
+                            <div class="number col-12 p-0">
+                                24
+                            </div>
+                            <div class="text col-12 m-auto p-0">
+                                Giờ
+                            </div>
+                        </div>
+                        <div class="dot col-2 p-0">
+                            :
+                        </div>
+                        <div class="minute minute--phone row col-5 m-auto p-0">
+                            <div class="number col-12 p-0">
+                                00
+                            </div>
+                            <div class="text col-12 m-auto p-0">
+                                Phút
+                            </div>
+                        </div>
+                        <div class="line col-9">
+                        </div>
+                        <div class="day day--phone col-9" id="textday--phone">
+                            Thứ hai
+                        </div>
+                        <div class="line col-6">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mouse-tick mouse-tick--phone col-12 m-auto row">
+                    <div class="space space--phone col-3 m-auto">
+
+                    </div>
+                    <div class="cricle-mouse-bg cricle-mouse-bg--phone row col-3 m-auto p-0" id='cricle'>
+                        <div class="cricle-mouse cricle-mouse--phone row col-3 m-auto p-0">
+                            <div class="dott col-3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-tick col-12 m-auto p-0">
+
+                    </div>
+                </div>
+            </div>
+            <div class="cricle-tick--round cricle-tick--round--phone row p-0 m-0">
+                <div class="it it--15 it--15--phone col-12 row p-0 m-0">
+                    <div class="item item--1 item--1--phone col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--5 item--5--phone col-6 p-0 m-0">
+                    </div>
+                </div>
+                <div class="it it--23 it--23--phone col-12 row p-0 m-0">
+
+                    <div class="item--iso item--3 item--3--phone right col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--iso item--2 item--2--phone left col-6 p-0 m-0">
+
+                    </div>
+                </div>
+                <div class="it it--46 col-12 row p-0 m-0">
+
+                    <div class="item item--6 item--6--phone col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--4 item--4--phone col-6 p-0 m-0">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="limit-grbt limit-grbt--phone row">
+        <div class="bt bt-clock row col-6">
+            <div class="box-clock col-5">
+                <div class="icon clock clock--phone row col-12">
+                    <img src="./images/icon_Cai_Lai.png" alt="" class="col-12">
+                </div>
+                <div class="text text-clock--phone">
+                    Cho Phép
+                </div>
+            </div>
+        </div>
+        <div class="bt bt-lock row col-6">
+            <div class="box-lock col-4">
+                <div class="icon lock lock--phone row col-12">
+                    <img src="./images/keyBlock.png" alt="" class="col-12">
+                </div>
+                <div class="text text-lock--phone">
+                    Chặn
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-9 col-xl-10 icon-android">
+        <img src="./images/MacOS.png" alt=""> 
+        <div class="text">
+          MacOS
+        </div>
+    </div>
+</div>
+ <!-- phone -->
+ <!-- google -->
+  <div class="app google">
+    <div class="row access-App access-App--google">
+   
+        <div class="active-limit active-limit--google col-10 row">
+            <div class="logo-facebook logo--google col-2">
+                <img src="./images/google.png" alt="">
+            </div>
+            <div class="text row col-10">
+                <div class="label-logo col-12">
+                    Google
+                </div>
+                <div class="limit-today limit-today--google col-12 row">
+                    <div class="text col-9 col-sm-11">Thiết lập giới hạn thời gian</div>
+                    <i class="fas fa-chevron-down col-1 p-0 bt-arrow-limit bt-arrow-limit--google" style="color: #2aabcb; font-size: 14px;"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="btn-switch-button btn col-2">
+            <label class="switch">
+            <input type="checkbox" checked class="ac-App ac-App--google">
+            <span class="slider round"></span>
+  
+    </div>
+    </div>
+
+    <div class="col-12 limit-day limit-day--google">
+        <div class="col-10 col-sm-9 row">
+            <div class="col-1 row day-item day-item--google day-active day-active--google">
+                <div>T2</div>
+            </div>
+            <div class="col-1 row day-item day-item--google">
+                <div>T3</div>
+            </div>
+            <div class="col-1 row day-item day-item--google">
+                <div>T4</div>
+            </div>
+            <div class="col-1 row day-item day-item--google">
+                <div>T5</div>
+            </div>
+            <div class="col-1 row day-item day-item--google">
+                <div>T6</div>
+            </div>
+            <div class="col-1 row day-item day-item--google">
+                <div>T7</div>
+            </div>
+            <div class="col-1 row day-item day-item--google">
+                <div>CN</div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-12 limit-cricle limit-cricle--google">    
+        <div class="col-4 row cricle-bg cricle-bg--google">
+
+            <div class="cricle-tick cricle-tick--google row">
+
+                <div class="cricle-texttime cricle-texttime--google">
+                    <div class="title">
+                        Giới hạn
+                    </div>
+                    <div class="digital row">
+                        <div class="hours hours--google row col-5 m-auto p-0">
+                            <div class="number col-12 p-0">
+                                24
+                            </div>
+                            <div class="text col-12 m-auto p-0">
+                                Giờ
+                            </div>
+                        </div>
+                        <div class="dot col-2 p-0">
+                            :
+                        </div>
+                        <div class="minute minute--google row col-5 m-auto p-0">
+                            <div class="number col-12 p-0">
+                                00
+                            </div>
+                            <div class="text col-12 m-auto p-0">
+                                Phút
+                            </div>
+                        </div>
+                        <div class="line col-9">
+                        </div>
+                        <div class="day day--google col-9" id="textday--google">
+                            Thứ hai
+                        </div>
+                        <div class="line col-6">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mouse-tick mouse-tick--google col-12 m-auto row">
+                    <div class="space space--google col-3 m-auto">
+
+                    </div>
+                    <div class="cricle-mouse-bg cricle-mouse-bg--google row col-3 m-auto p-0" id='cricle'>
+                        <div class="cricle-mouse cricle-mouse--google row col-3 m-auto p-0">
+                            <div class="dott col-3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="group-tick col-12 m-auto p-0">
+
+                    </div>
+                </div>
+            </div>
+            <div class="cricle-tick--round cricle-tick--round--google row p-0 m-0">
+                <div class="it it--15 it--15--google col-12 row p-0 m-0">
+                    <div class="item item--1 item--1--google col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--5 item--5--google col-6 p-0 m-0">
+                    </div>
+                </div>
+                <div class="it it--23 it--23--google col-12 row p-0 m-0">
+
+                    <div class="item--iso item--3 item--3--google right col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--iso item--2 item--2--google left col-6 p-0 m-0">
+
+                    </div>
+                </div>
+                <div class="it it--46 col-12 row p-0 m-0">
+
+                    <div class="item item--6 item--6--google col-6 p-0 m-0">
+
+                    </div>
+                    <div class="item item--4 item--4--google col-6 p-0 m-0">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="limit-grbt limit-grbt--google row">
+        <div class="bt bt-clock row col-6">
+            <div class="box-clock col-5">
+                <div class="icon clock clock--google row col-12">
+                    <img src="./images/icon_Cai_Lai.png" alt="" class="col-12">
+                </div>
+                <div class="text text-clock--google">
+                    Cho Phép
+                </div>
+            </div>
+        </div>
+        <div class="bt bt-lock row col-6">
+            <div class="box-lock col-4">
+                <div class="icon lock lock--google row col-12">
+                    <img src="./images/keyBlock.png" alt="" class="col-12">
+                </div>
+                <div class="text text-lock--google">
+                    Chặn
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-9 col-xl-10 icon-android">
+        <img src="./images/MacOS.png" alt=""> 
+        <div class="text">
+            MacOS
+        </div>
+    </div>
+</div>
+ <!-- google -->
+
+        </div>
+                            <div class="col-12 col-lg-12 Time-box">
+                                <div class="Time-box-arrow row col-12">
+                                    <img src="./images/Arrow-left.png" alt="" class="col-4">
+                                    <h5 class="col-8">Cài đặt hết thời gian</h5>
+                                </div>
+                                <div class="Time-setting col-12">
+                                    <div class="setting-title">
+                                        Thông báo
+                                    </div>
+                                    <div class="setting-title-child row">
+                                        <div class="title col-10">
+                                           Cảnh báo cho tôi
+                                        </div>
+                                        <div class="btn-switch-button col-2 btn">
+                                            <label class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <div class="text col-10">
+                                        Nhận cảnh báo kho con ứng dụng mới lần đầu tiên
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <!-- Set Rules -->
+    <div class="SetRule">
+        <div class="arrow row col-12">
+            <img src="./images/Arrow-left.png" alt="" class="col-4 img-arrow">
+            <h5 class="col-8">Thiết lập quy tắc</h5>
+        </div>
+        <div class="SetRule-content">
+            <ul>
+                <li class="Timelimit row">
+                    <a href='../13.DashBoard/dashboard.html' class="row col-12 p-0">
+                        <div class="col-12"> <img src="images/clock.png" alt=""> Giới hạn thời gian hàng ngày</div>
+                    </a>
+                </li>
+                <li class="row">
+                    <a href='../14.Dashboard/dashboard.html' class="row col-12 p-0">
+                        <div class="col-12"> <img src="images/restrictTime.png" alt=""> Hạn chế thời gian</div>
+                    </a>
+                </li>
+                <li class="row">
+                    <a href="../15.Web Filter/dashboard.html" class="row col-12 p-0">
+                        <div class="col-12"> <img src="images/language.png" alt=""> Lọc Web</div>
+                    </a>
+                </li>
+                <li class="row">
+                    <a href="" class="row col-12 p-0">
+                        <div class="col-6"> <img src="images/youtube.png" alt=""> Giám sát Youtube</div>
+                        <div class="col-4 premium">Tính năng cao cấp</div>
+                    </a>
+                </li>
+                <li class="row">
+                    <a href="" class="row col-12 p-0">
+                        <div class="col-6"> <img src="images/Games.png" alt=""> Trò chơi & ứng dụng</div>
+                        <div class="col-4 premium">Tính năng cao cấp</div>
+                    </a>
+                </li>
+                <li class="row">
+                    <a href="" class="row col-12 p-0">
+                        <div class="col-6"> <img src="images/callSMS.png" alt=""> Cuộc gọi & Tin nhắn</div>
+                        <div class="col-4 premium">Tính năng cao cấp</div>
+                    </a>
+                </li>
+                <li class="row">
+                    <a href="" class="row col-12 p-0">
+                        <div class="col-6"> <img src="images/location.png" alt=""> Giám sát vị trí</div>
+                        <div class="col-4 premium">Tính năng cao cấp</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Set Rules -->
+
+    <!-- Modal -->
+    <div class="modal fade limitChildrenPopup" id="Notetime" tabindex="-1" aria-labelledby="limitChildrenLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./images/youtube.png" alt="Warning">
+                    <h5>Web access to</h5>
+                    <h5>youtube.com</h5>
+                    <p>You're about to enable web access to youtube.com on all of NamPhong's devices</youtube>
+                    </p>
+                    <div type="button" class="btn-confirm" data-bs-dismiss="modal" aria-label="Close">Confirm</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- <--Modal-->
+
+
+    <div class="SaveStyle SaveStyle--youtube">
+        <div class="savecolor">
+        </div>
+        <div class="position">
+        </div>
+        <div class="setting"></div>
+    </div>
+    <div class="SaveStyle SaveStyle--facebook">
+        <div class="savecolor">
+        </div>
+        <div class="position">
+        </div>
+        <div class="setting"></div>
+    </div>
+    <div class="SaveStyle SaveStyle--messenger">
+        <div class="savecolor">
+        </div>
+        <div class="position">
+        </div>
+        <div class="setting"></div>
+    </div>
+    <div class="SaveStyle SaveStyle--zalo">
+        <div class="savecolor">
+        </div>
+        <div class="position">
+        </div>
+        <div class="setting"></div>
+    </div>
+    <div class="SaveStyle SaveStyle--vinID">
+        <div class="savecolor">
+        </div>
+        <div class="position">
+        </div>
+        <div class="setting"></div>
+    </div>
+    <div class="SaveStyle SaveStyle--be">
+        <div class="savecolor">
+        </div>
+        <div class="position">
+        </div>
+        <div class="setting"></div>
+    </div>
+    <div class="SaveStyle SaveStyle--phone">
+        <div class="savecolor">
+        </div>
+        <div class="position">
+        </div>
+        <div class="setting"></div>
+    </div>
+    <div class="SaveStyle SaveStyle--google">
+        <div class="savecolor">
+        </div>
+        <div class="position">
+        </div>
+        <div class="setting"></div>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+    <!-- <script src="https://assets.codepen.io/16327/InertiaPlugin.min.js"></script> -->
+    <script src="js/jquery.keyframes.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/effect.js"></script>
+    <script src="js/effect-Copy.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/all.min.css"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="js/all.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="headerContent">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-12 col-12 logo">
+                    <a href="#"><img src="images/logo2.jpg" alt="" class="logoimg"></a>
+                </div>
+                <div class="col-lg-7 col-10 page-title justify-item-center">
+                    <div class="navbars-wrapper">
+                        <a href="#navbars" class="navbars" data-bs-toggle="offcanvas" role="button" aria-controls="navbars">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                        <h1>Hoạt động của con</h1>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-2 accountInfo dropdown">
+                    <button class="rightClick btn dropdown-toggle" id="accountDroppdown" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                    <h4 class="accountName">LiemNguyen <i class="fas fa-chevron-down bt-arrow" style="color: #2aabcb; font-size: 14px;"></i></h4>
+                    <!-- <button class="rightClick btn dropdown-toggle" id="accountDroppdown"> -->
+                       
+                    <!-- </button> -->
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="accountDroppdown" aria-labelledby="accountDroppdown">
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/help.png" alt="Trung tâm hỗ trợ">Trung tâm hỗ trợ</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"><img src="images/logOut.png" alt="Đăng xuất">Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content-wrapper">
+            <div class="left-sidebar" tabindex="-1" id="navbars" aria-labelledby="navbarsLable">
+                <div class="navigation-menu">
+                    <div class="scrollable-content">
+                        <ul class="menu-list">
+                            <li title="My family" class="menu-item" role="navigation">
+                                <a class="menu-anchor menu-anchor-active" href="#/">
+                                    <img src="images/my-family.png" alt="" class="show" />
+                                    <img src="images/MyFamily2.png" alt="" class="hide" />
+                                    <span>Hoạt động<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Danh sách thiết bị" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/devices.png" alt="" class="show" />
+                                    <img src="images/Devices2.png" alt="" class="hide" />
+                                    <span>Thiết bị<br> của con</span>
+                                </a>
+                            </li>
+                            <li title="Vị trí của con" class="menu-item" role="navigation">
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/my-location.png" alt="" class="show" />
+                                    <img src="images/MyLocation2.png" alt="" class="hide" />
+                                    <span>Vị trí <br>của con</span>
+                                </a>
+                            </li>
+                            <li title="Tài khoản" class="menu-item" role="navigation" class>
+                                <a class="menu-anchor" href="#/">
+                                    <img src="images/account.png" alt="" class="show" />
+                                    <img src="images/Account2.png" alt="" class="hide" />
+                                    <span>Tài khoản</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="license-info-container">
+                    <ul class="license-info-optionals">
+                        <li class="license-infoTitle"><span>Bản dùng thử đặc biệt</span></li>
+                        <li class="license-info-subTitle">
+                            <span>Hết hạn sau 3 ngày</span>
+                            <a class="upgrade" href="#">Nâng cấp</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="page-title-wrapper notHide">
+                    <h2><a href="#" class="backToPrevious"><i class="fas fa-arrow-left"></i></a>Thêm hồ sơ trẻ</h2>
+                </div>
+                <div class="columnMain-container">
+                    <div class="cardBody">
+                        <span class="avartar">
+							<button type="button" data-bs-toggle="modal" data-bs-target="#addThumnailPopup">
+								<img src="images/icon1.png" alt="">
+							</button>
+						</span>
+                        <form class="addChildForm">
+                            <div class="mb-5 formField">
+                                <label for="name" class="form-label">Tên của trẻ:</label>
+                                <input type="text nameadd" class="form-control" id="name">
+                            </div>
+                            <div class="row formField formFieldFlex">
+                                <div class="col-md-6 col-12 genderField">
+                                    <label for="gender" class="form-label">Giới tính:</label>
+                                    <div class="chosen-wrapper" data-js="custom-scroll">
+                                        <select class="form-select makeMeList" id="gender" aria-label="Giới tính">
+											<option value="0" selected>Con trai</option>
+											<option value="1">Con gái</option>
+											<option value="2">Không thích chọn</option>
+										</select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-12">
+                                    <label for="yearOfBirth" class="form-label">Năm sinh:</label>
+                                    <div class="chosen-wrapper years" data-js="custom-scroll">
+                                        <select class="makeMeList" id="yearOfBirth">
+											<option value="2010">2010</option>
+											<option value="2009">2009</option>
+											<option value="2007">2007</option>
+											<option value="2006">2006</option>
+											<option value="2005">2005</option>
+											<option value="2004">2004</option>
+											<option value="2003">2003</option>
+											<option value="2002">2002</option>
+											<option value="2001">2001</option>
+											<option value="2000">2000</option>
+										</select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="formButton">
+                                <!--
+									- Nếu form chưa validate thì button disable, dùng thẻ button đang comment
+									- Nếu form đã validate thì remove attr disable của button, dùng thẻ hiện tại
+								-->
+                                <!-- 								<button class="btn btn-primary btn-hover" type="submit" disabled>Tiếp <span>></span></button> -->
+                                <button class="btn btn-primary btn-hover" type="submit">Tiếp <span>></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade limitChildrenPopup" id="limitChildren" tabindex="-1" aria-labelledby="limitChildrenLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/warning.png" alt="Warning">
+                    <h5>Đã đạt đến giới hạn</h5>
+                    <p>Tài khoản hiện tại của bạn giới hạn bảo vệ 3 thiết bị và 3 trẻ. Vui lòng nâng cấp tài khoản để có thể bảo vệ nhiều hơn</p>
+                    <a href="#">Xem các tính năng sau khi nâng cấp</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-upgrade">Nâng cấp</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add Thumnail Modal -->
+    <div class="modal fade addThumnailPopup" id="addThumnailPopup" tabindex="-1" aria-labelledby="addThumnailLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content p-3">
+                <div class="modal-header p-0">
+                    <h3>Lựa chọn ảnh đại diện</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row gx-4">
+                        <div class="col-4 mb-3 imgface">
+                            <input type="radio" class="input-hidden" id="thumnail1" name="thumnail" checked>
+                            <label for="thumnail1">
+								<img src="images/icon1.png" alt="Icon1" class="ImgPanel">
+							</label>
+                        </div>
+                        <div class="col-4 mb-3 imgface">
+                            <input type="radio" class="input-hidden" id="thumnail4" name="thumnail">
+                            <label for="thumnail4">
+								<img src="images/icon4.png" alt="Icon4" class="ImgPanel">
+							</label>
+                        </div>
+                        <div class="col-4 mb-3 imgface">
+                            <input type="radio" class="input-hidden" id="thumnail2" name="thumnail">
+                            <label for="thumnail2">
+								<img src="images/icon2.png" alt="Icon2" class="ImgPanel">
+							</label>
+                        </div>
+                        <div class="col-4 mb-3 imgface">
+                            <input type="radio" class="input-hidden" id="thumnail3" name="thumnail">
+                            <label for="thumnail3">
+								<img src="images/icon3.png" alt="Icon3" class="ImgPanel">
+							</label>
+                        </div>
+                        <div class="col-4 mb-3 imgface">
+                            <input type="radio" class="input-hidden" id="thumnail6" name="thumnail">
+                            <label for="thumnail6">
+								<img src="images/icon6.png" alt="Icon6" class="ImgPanel">
+							</label>
+                        </div>
+                        <div class="col-4 mb-3 imgface">
+                            <input type="radio" class="input-hidden" id="thumnail5" name="thumnail">
+                            <label for="thumnail5">
+								<img src="images/icon5.png" alt="Icon5" class="ImgPanel">
+							</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-panel">Xác nhận</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/effect.js"></script>
+</body>
+
+</html>

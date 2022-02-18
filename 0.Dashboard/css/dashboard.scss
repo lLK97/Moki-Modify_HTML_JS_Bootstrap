@@ -1,0 +1,202 @@
+.dashboard-wrapper {
+    height: 100%;
+    .columnMain-container {
+        max-width: 100%;
+        background: #f8fafd;
+        height: 100%;
+    }
+}
+
+.dashboard-content {
+    max-width: 280px;
+    background: #fff;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, .2);
+    height: 100%;
+    overflow-y: scroll;
+    .acc-activities {
+        @media all and (max-height: 350px) {
+            overflow-y: scroll;
+            height: 135px;
+        }
+        @media all and (min-height: 350px) {
+            overflow-y: scroll;
+            height: 180px;
+        }
+        @media all and (min-height: 400px) {
+            overflow-y: scroll;
+            height: 215px;
+        }
+        @media all and (min-height: 433px) {
+            height: 240px;
+        }
+        @media all and (min-height: 450px) {
+            height: 268px;
+        }
+        @media all and (min-height: 500px) {
+            height: 310px;
+        }
+        @media all and (min-height: 522px) {
+            height: 350px;
+        }
+        @media all and (min-height: 625px) {
+            height: 460px;
+        }
+        @media all and (min-height: 630px) {
+            height: 440px;
+        }
+        @media all and (min-height: 654px) {
+            height: 455px;
+        }
+        @media all and (min-height: 680px) {
+            height: 480px;
+        }
+        @media all and (min-height: 700px) {
+            height: 520px;
+        }
+        @media all and (min-height: 760px) {
+            height: auto;
+        }
+        .dropdown {}
+    }
+    ul {
+        list-style-type: none;
+        margin: 10px 0;
+        padding: 0;
+    }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.acc-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 10px;
+    img {
+        width: 70px;
+        margin-bottom: 5px;
+    }
+}
+
+.acc-status {
+    color: #a6a6a7;
+    font-size: 17px;
+}
+
+.acc-devices {
+    font-size: 20px;
+    color: #515862;
+    margin-bottom: 3px;
+}
+
+.acc-activities {
+    li {
+        padding: 18px 10px;
+        font-weight: bold;
+        border-top: 1px solid #faf3f3;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        cursor: pointer;
+        &:last-child {
+            border-bottom: 1px solid #faf3f3;
+            display: block;
+        }
+        img {
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+        }
+        button {
+            font-size: 12px;
+            padding: 0;
+            float: right;
+            outline: none;
+            box-shadow: none;
+            color: #2aabcb;
+        }
+    }
+    .active__color {
+        background-color: #e5efff;
+    }
+    li:not(.active__color):hover {
+        background-color: #f4f5f7;
+    }
+    ul {
+        margin: 0;
+        li {
+            padding: 15px 0 15px 10px;
+        }
+        // li:not(.active__color):hover {
+        //     background-color: #f4f5f7
+        // }
+        // .active__color--item {
+        //     background-color: #e5efff;
+        // }
+        // .active__color--item:hover {
+        //     background-color: #bdd6ff;
+        // }
+    }
+    li.dropdown {
+        >img {
+            width: 25px;
+        }
+        li {
+            img {
+                width: 25px;
+            }
+        }
+    }
+}
+
+.btn-check {
+    &:focus+.btn {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+.btn {
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+.dropdown {
+    padding: 0 !important;
+    min-height: 62px;
+    .title {
+        padding: 10px 10px 0;
+        line-height: 31px;
+        min-height: 62px;
+    }
+    .title:active {
+        background-color: #e5efff;
+    }
+    div {
+        ul {
+            li {
+                padding: 10px 0 10px 20px;
+                min-height: 58px;
+                background-color: white;
+            }
+        }
+    }
+    .collapse {
+        clear: both;
+        // margin-top: 12px;
+    }
+    .btn {
+        transform: scaleY(1);
+        line-height: 31px;
+        &--reverse {
+            transform: scaleY(-1);
+        }
+    }
+}
